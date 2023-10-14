@@ -339,6 +339,12 @@ article.post .entry-footer {
     opacity: .85;
 }
 
+.button.ajax_add_to_cart {
+    background-color: transparent;
+    padding: 0;
+    color: #0d0c22;
+    text-decoration: underline;
+}
 .form-row {
     display: flex;
     flex-direction: column;
