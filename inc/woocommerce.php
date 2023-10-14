@@ -47,20 +47,6 @@ add_action('after_setup_theme', 'daniel_lucia_woocommerce_setup');
 function daniel_lucia_woocommerce_scripts()
 {
 	wp_enqueue_style('daniel-lucia-woocommerce-style', get_template_directory_uri() . '/woocommerce.css', array(), _S_VERSION);
-
-	$font_path   = WC()->plugin_url() . '/assets/fonts/';
-	$inline_font = '@font-face {
-			font-family: "star";
-			src: url("' . $font_path . 'star.eot");
-			src: url("' . $font_path . 'star.eot?#iefix") format("embedded-opentype"),
-				url("' . $font_path . 'star.woff") format("woff"),
-				url("' . $font_path . 'star.ttf") format("truetype"),
-				url("' . $font_path . 'star.svg#star") format("svg");
-			font-weight: normal;
-			font-style: normal;
-		}';
-
-	wp_add_inline_style('daniel-lucia-woocommerce-style', $inline_font);
 }
 add_action('wp_enqueue_scripts', 'daniel_lucia_woocommerce_scripts');
 
@@ -147,18 +133,6 @@ if (!function_exists('daniel_lucia_woocommerce_wrapper_after')) {
 }
 add_action('woocommerce_after_main_content', 'daniel_lucia_woocommerce_wrapper_after');
 
-/**
- * Sample implementation of the WooCommerce Mini Cart.
- *
- * You can add the WooCommerce Mini Cart to header.php like so ...
- *
-	<?php
-		if ( function_exists( 'daniel_lucia_woocommerce_header_cart' ) ) {
-			daniel_lucia_woocommerce_header_cart();
-		}
-	?>
- */
-
 if (!function_exists('daniel_lucia_woocommerce_cart_link_fragment')) {
 	/**
 	 * Cart Fragments.
@@ -221,15 +195,6 @@ if (!function_exists('daniel_lucia_woocommerce_header_cart')) {
 		<ul id="site-header-cart" class="site-header-cart">
 			<li class="<?php echo esc_attr($class); ?>">
 				<?php daniel_lucia_woocommerce_cart_link(); ?>
-			</li>
-			<li>
-				<?php
-				$instance = array(
-					'title' => '',
-				);
-
-				the_widget('WC_Widget_Cart', $instance);
-				?>
 			</li>
 		</ul>
 		<?php

@@ -29,6 +29,13 @@
 				);
 				?>
 			</nav>
+
+			<?php
+				if ( function_exists( 'daniel_lucia_woocommerce_header_cart' ) ) {
+					daniel_lucia_woocommerce_header_cart();
+				}
+			?>
+
 		</header>
 	<?php endif; ?>
 

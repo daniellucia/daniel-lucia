@@ -124,6 +124,9 @@ function daniel_lucia_scripts()
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
 	}
+
+	wp_register_script('daniellucia-woocommerce', get_template_directory_uri() . '/js/woocommerce.js', array('jquery'), '1.0', true);
+	wp_enqueue_script('daniellucia-woocommerce');
 }
 
 add_action('wp_enqueue_scripts', 'daniel_lucia_scripts');

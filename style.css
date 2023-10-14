@@ -137,6 +137,29 @@ ul {
     height: auto;
 }
 
+.site-header .main-navigation {
+    margin-left: auto;
+}
+
+.site-header .site-header-cart {
+    margin-left: 30px;
+}
+
+.site-header .site-header-cart a {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    line-height: 1.2;
+}
+
+.site-header .site-header-cart a .amount {
+    font-weight: bold;
+}
+
+.site-header .site-header-cart a .count {
+    font-size: 0.9em;
+}
+
 .main-navigation nav {
     flex-grow: 1;
 }
@@ -145,6 +168,7 @@ ul {
     .site-header {
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
 }
 
@@ -346,6 +370,7 @@ article.post .entry-footer {
     color: var(--text-color);
     text-decoration: underline;
 }
+
 .form-row {
     display: flex;
     flex-direction: column;
