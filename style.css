@@ -250,6 +250,17 @@ article.post:after {
     bottom: calc(var(--space-basic) * -2);
 }
 
+.post-thumbnail {
+    margin: 0 0 calc(var(--space-basic) * 2) 0;
+    display: inline-block;
+}
+
+.post-thumbnail img {
+    border-radius: var(--border-radius-min);
+    max-width: 600px;
+    height: auto;
+}
+
 .single article.post {
     margin: 0 0 calc(var(--space-basic) * 2) 0;
 }
