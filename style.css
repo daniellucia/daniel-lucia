@@ -215,14 +215,14 @@ article.post:after {
     margin-top: 0;
 }
 
-article.post .entry-title {
+article.post .entry-title, .woocommerce .product_title {
     font-size: 45px;
     max-width: 750px;
     margin: 0 0 20px 0;
     line-height: 1.2;
 }
 
-article.post .entry-title a {
+article.post .entry-title a, .woocommerce .product_title a {
     /*color: #0d0c22;*/
 }
 
@@ -248,7 +248,7 @@ article.post .entry-footer {
     flex-grow: 1;
 }
 
-.search-form .search-submit {
+.search-form .search-submit, form.cart .button {
     border: none;
     cursor: pointer;
     background-color: #000;
@@ -259,7 +259,7 @@ article.post .entry-footer {
     border-bottom-right-radius: calc(var(--border-radius)/2);
 }
 
-.search-form .search-field {
+.search-form .search-field, form.cart .input-text {
     border: none;
     padding: calc(var(--space-basic) / 3);
     width: 100%;

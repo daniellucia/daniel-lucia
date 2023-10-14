@@ -3,3 +3,50 @@ Theme Name: daniel-lucia
 
 WooCommerce styles override
 */
+
+div.product {
+	display: flex;
+	flex-direction: column;
+	gap: calc(var(--space-basic) * 2);
+	margin: 0 0 calc(var(--space-basic) * 2) 0;
+}
+
+@media (min-width: 768px) {
+	div.product {
+		flex-direction: row;
+	}
+}
+
+.woocommerce .product_title {
+	margin: 0;
+}
+
+div.product .summary {
+	flex-grow: 1;
+}
+
+div.product .summary .price {
+    font-family: var(--font-family-title);
+    margin: 0 0 var(--space-basic) 0;
+    font-size: 25px;
+}
+
+/**
+ * Botón comprar y cantidad
+ */
+form.cart {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: var(--space-basic) 0;
+	max-width: 550px;
+}
+
+form.cart .button {
+	flex-grow: 1;
+	padding: calc(var(--space-basic) / 3);
+}
+
+form.cart .input-text {
+	background-color: var(--background-light);
+}
