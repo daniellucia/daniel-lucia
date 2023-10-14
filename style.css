@@ -257,6 +257,8 @@ article.post .entry-footer {
     font-weight: 600;
     border-top-right-radius: calc(var(--border-radius)/2);
     border-bottom-right-radius: calc(var(--border-radius)/2);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
 }
 
 .search-form .search-field, form.cart .input-text {
@@ -302,4 +304,19 @@ article.post .entry-footer {
 
 .breadcrumbs .current-item {
     font-weight: 600;
+}
+
+
+/**
+ * formularios
+ */
+.button {
+    border: none;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+    border-radius: calc(var(--border-radius)/2);
+    padding: calc(var(--space-basic) / 3);
+    display: inline-block;
 }
