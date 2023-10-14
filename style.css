@@ -16,6 +16,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 
 :root {
+    --text-color: #0d0c22;
     --space-basic: 40px;
     --border-radius: 20px;
     --border-radius-min: 10px;
@@ -77,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     text-decoration: none;
-    color: #0d0c22;
+    color: var(--text-color);
 }
 
 a:hover {
@@ -342,7 +343,7 @@ article.post .entry-footer {
 .button.ajax_add_to_cart {
     background-color: transparent;
     padding: 0;
-    color: #0d0c22;
+    color: var(--text-color);
     text-decoration: underline;
 }
 .form-row {
