@@ -36,6 +36,10 @@ section.related {
 	margin: var(--space-basic) 0 0 0;
 }
 
+div.product .woocommerce-product-gallery__image {
+	border-radius: var(--border-radius-min);
+}
+
 /**
  * Botón comprar y cantidad
  */
@@ -56,6 +60,11 @@ form.cart .input-text {
 	background-color: var(--background-light);
 }
 
+form.cart .added_to_cart {
+	margin-left: 30px;
+	color: #c1191b;
+	text-decoration: underline;
+}
 
 /**
  * login
@@ -142,6 +151,11 @@ ul.products li.product .button {
 	display: none;
 }
 
+ul.products li.product img {
+	border-radius: var(--border-radius-min);
+}
+
+
 /**
  * carrito
  */
@@ -222,4 +236,26 @@ ul.products li.product .button {
 .woocommerce-order-received .woocommerce-notice--success {
 	font-size: 20px;
 	margin: 0 0 var(--space-basic) 0;
+}
+
+/**
+ * mensajes
+ */
+
+.woocommerce-message {
+	margin: 0 0 calc(var(--space-basic) / 2) 0;
+	padding: 10px 30px;
+	background-color: var(--background-light);
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: var(--border-radius);
+}
+
+.woocommerce-message .button {
+	background-color: transparent;
+	padding: 0;
+	color: #c1191b;
+	text-decoration: underline;
 }
