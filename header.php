@@ -45,3 +45,11 @@
 		</div>
 	<?php endif; ?>
 
+	<?php if (is_checkout() || is_cart()): ?>
+	<div class="button-back">
+		<a class="button button-link" href="<?php echo get_home_url(); ?>"><?php echo __('Back to web', 'woocommerce'); ?></a>
+	</div>
+	<?php endif; ?>
+
+
+
