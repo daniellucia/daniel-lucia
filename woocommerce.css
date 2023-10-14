@@ -86,6 +86,10 @@ form.cart .input-text {
 	margin: 0 auto;
 }
 
+.woocommerce-checkout.logged-in .container-columns {
+	max-width: 650px;
+}
+
 .woocommerce-checkout .checkout.woocommerce-checkout h3 {
 	margin: 0 0 calc(var(--space-basic) / 2) 0;
 }
