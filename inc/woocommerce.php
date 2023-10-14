@@ -338,15 +338,16 @@ remove_action('woocommerce_order_details_after_order_table', 'woocommerce_order_
  * AJAX
  */
 
- function daniellucia_ajax_add_to_cart_handler() {
+function daniellucia_ajax_add_to_cart_handler()
+{
 	WC_Form_Handler::add_to_cart_action();
 	WC_AJAX::get_refreshed_fragments();
 }
-add_action( 'wc_ajax_ace_add_to_cart', 'daniellucia_ajax_add_to_cart_handler' );
-add_action( 'wc_ajax_nopriv_ace_add_to_cart', 'daniellucia_ajax_add_to_cart_handler' );
+add_action('wc_ajax_ace_add_to_cart', 'daniellucia_ajax_add_to_cart_handler');
+add_action('wc_ajax_nopriv_ace_add_to_cart', 'daniellucia_ajax_add_to_cart_handler');
 
 // Remove WC Core add to cart handler to prevent double-add
-remove_action( 'wp_loaded', array( 'WC_Form_Handler', 'add_to_cart_action' ), 20 );
+remove_action('wp_loaded', array('WC_Form_Handler', 'add_to_cart_action'), 20);
 
 function daniel_luciaajax_add_to_cart_add_fragments($fragments)
 {
@@ -368,3 +369,12 @@ function daniel_luciaajax_add_to_cart_add_fragments($fragments)
 	return $fragments;
 }
 add_filter('woocommerce_add_to_cart_fragments', 'daniel_luciaajax_add_to_cart_add_fragments');
+
+
+/**
+ * Reemplazamos descripcion corta por descripción
+ */
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);
+add_action('woocommerce_single_product_summary', function () {
+	echo the_content();
+});
