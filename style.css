@@ -215,7 +215,7 @@ article.post:after {
     margin-top: 0;
 }
 
-article.post .entry-title, .woocommerce .product_title {
+article.post .entry-title, .woocommerce .product_title, .entry-header h1.entry-title {
     font-size: 45px;
     max-width: 750px;
     margin: 0 0 20px 0;
