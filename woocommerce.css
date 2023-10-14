@@ -26,9 +26,9 @@ div.product .summary {
 }
 
 div.product .summary .price {
-    font-family: var(--font-family-title);
-    margin: 0 0 var(--space-basic) 0;
-    font-size: 25px;
+	font-family: var(--font-family-title);
+	margin: 0 0 var(--space-basic) 0;
+	font-size: 25px;
 }
 
 /**
@@ -49,4 +49,46 @@ form.cart .button {
 
 form.cart .input-text {
 	background-color: var(--background-light);
+}
+
+
+/**
+ * login
+ */
+
+.woocommerce-login {
+	display: flex;
+	flex-direction: column;
+	gap: calc(var(--space-basic) * 2);
+}
+
+.woocommerce-login .woocommerce-notices-wrapper {
+	display: none;
+}
+
+.woocommerce-login form {
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.woocommerce-login {
+		flex-direction: row;
+	}
+}
+
+/**
+ * checkout
+ */
+
+.woocommerce-checkout .container-columns {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.woocommerce-checkout .checkout.woocommerce-checkout h3 {
+	margin: 0 0 calc(var(--space-basic) / 2) 0;
+}
+
+.woocommerce-checkout .woocommerce-billing-fields__field-wrapper {
+	margin: 0 0 calc(var(--space-basic) / 2) 0;
 }

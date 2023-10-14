@@ -320,3 +320,22 @@ article.post .entry-footer {
     padding: calc(var(--space-basic) / 3);
     display: inline-block;
 }
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-row label {
+    color: #6e6d7a;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.form-row .input-text {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #c8cace;
+    border-radius: 4px;
+}
