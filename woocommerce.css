@@ -129,3 +129,14 @@ ul.products {
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 	gap: var(--space-basic);
 }
+
+ul.products li.product a {
+	display: flex;
+	flex-direction: column;
+	gap: calc(var(--space-basic)/3);
+	align-items: center;
+}
+
+ul.products li.product .button {
+	display: none;
+}
