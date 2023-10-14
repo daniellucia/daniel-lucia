@@ -1,0 +1,305 @@
+/*!
+Theme Name: Daniel Lúcia
+Theme URI: http://www.daniellucia.es
+Author: Daniel Lucia
+Author URI: http://www.daniellucia.es
+Description: Theme personalizado para  la web de Daniel Lúcia
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: daniel-lucia
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+*/
+
+
+:root {
+    --space-basic: 40px;
+    --border-radius: 20px;
+    --border-radius-min: 10px;
+    --font-family-main: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: 'Space Grotesk', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --background-light: #f6f8fe;
+    --background-dark: #c8cace;
+    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    html {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto
+    }
+}
+
+@media only screen and (max-width: 959px) {
+    html {
+        -webkit-text-size-adjust: none;
+        -moz-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+        text-size-adjust: none;
+        -webkit-tap-highlight-color: transparent
+    }
+}
+
+body {
+    font-family: var(--font-family-main);
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    -webkit-font-feature-settings: 'ss01';
+    font-feature-settings: 'ss01';
+    line-height: 1.6;
+}
+
+select, button, input, textarea {
+    font-family: var(--font-family-main);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #0d0c22;
+}
+
+a:hover {
+    color: #6e6d7a;
+}
+
+p {
+    margin: 0 0 7px 0;
+}
+
+p:last-child {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site {
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .site {
+        padding: var(--space-basic);
+    }
+}
+
+/**
+ * header
+ */
+.site-header {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 var(--space-basic) 0;
+}
+
+.site-header .custom-logo {
+    width: 88px;
+    height: auto;
+}
+
+.main-navigation nav {
+    flex-grow: 1;
+}
+
+@media (min-width: 768px) {
+    .site-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.main-navigation .menu {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-basic);
+}
+
+.main-navigation .menu a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.container-columns {
+    display: flex;
+    gap: calc(var(--space-basic) * 2);
+}
+
+.container-columns>* {
+    flex-grow: 1;
+}
+
+.home .widget-area {
+    margin: calc(var(--space-basic) * 2) 0 0 0;
+}
+
+/**
+ * sidebar
+ */
+.widget-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--space-basic) * 2);
+    max-width: 550px;
+}
+
+.widget-area .widget {
+    padding: var(--space-basic);
+    border-radius: var(--border-radius);
+    background-color: var(--background-light);
+}
+
+.widget-area .widget ul {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--space-basic) / 4);
+}
+
+/**
+ * home
+ */
+
+.home-latest-post {
+    margin: calc(var(--space-basic) * 2) 0 0 0;
+}
+
+/**
+ * post
+ */
+
+article.post {
+    position: relative;
+    margin: calc(var(--space-basic) * 4) 0 0 0;
+    /*padding: var(--space-basic);
+    border-radius: var(--border-radius);
+    background-color: var(--background-light);*/
+}
+
+article.post:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 0;
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--background-dark);
+    bottom: calc(var(--space-basic) * -2);
+}
+
+.home-latest-post article.post:first-child {
+    margin-top: 0;
+}
+
+article.post .entry-title {
+    font-size: 45px;
+    max-width: 750px;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+}
+
+article.post .entry-title a {
+    /*color: #0d0c22;*/
+}
+
+article.post .entry-footer {
+    margin: calc(var(--space-basic) / 2) 0 0 0;
+}
+
+
+/**
+ * buscador
+ */
+
+.search-form {
+    display: flex;
+}
+
+.search-form label {
+    display: flex;
+    width: 100%;
+}
+
+.search-form label span {
+    flex-grow: 1;
+}
+
+.search-form .search-submit {
+    border: none;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    width: 100px;
+    font-weight: 600;
+    border-top-right-radius: calc(var(--border-radius)/2);
+    border-bottom-right-radius: calc(var(--border-radius)/2);
+}
+
+.search-form .search-field {
+    border: none;
+    padding: calc(var(--space-basic) / 3);
+    width: 100%;
+    border-top-left-radius: calc(var(--border-radius)/2);
+    border-bottom-left-radius: calc(var(--border-radius)/2);
+}
+
+/**
+ * páginas
+ */
+.page-header {
+    margin: 0 0 calc(var(--space-basic) * 2) 0;
+}
+
+.page-header .page-title {
+    font-size: 55px;
+    margin: 0 0 0 0;
+}
+
+.page-header .page-title:after {
+    content: "";
+    height: 4px;
+    width: 56px;
+    background-color: #c1191b;
+    display: inline-block;
+    margin: 0 0 0 10px;
+}
+
+.page-header .archive-description {
+    font-size: 20px;
+}
+
+/**
+ * breadcrumb
+ */
+.breadcrumbs {
+    margin: 0 0 var(--space-basic) 0;
+    /*font-size: 12px;*/
+}
+
+.breadcrumbs .current-item {
+    font-weight: 600;
+}
