@@ -7,13 +7,14 @@ WooCommerce styles override
 div.product {
 	display: flex;
 	flex-direction: column;
-	gap: calc(var(--space-basic) * 2);
+	gap: var(--space-basic);
 	margin: 0 0 calc(var(--space-basic) * 2) 0;
 }
 
 @media (min-width: 768px) {
 	div.product {
 		flex-direction: row;
+		gap: calc(var(--space-basic) * 2);
 	}
 }
 
@@ -92,20 +93,22 @@ form.cart .input-text {
 .woocommerce-checkout .woocommerce-billing-fields__field-wrapper {
 	margin: 0 0 calc(var(--space-basic) / 2) 0;
 }
+
 .woocommerce-checkout .shop_table {
 	margin: 0 0 calc(var(--space-basic) / 2) 0;
+	border: 1px solid #000;
+	border-radius: 4px;
 }
 
 .shop_table {
-    width: 100%;
+	width: 100%;
 }
 
 .shop_table td, .shop_table th {
 	padding: 5px;
 	text-align: left;
 }
+
 .shop_table td:last-child, .shop_table th:last-child {
 	text-align: right;
-}
-
 }
