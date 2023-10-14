@@ -232,7 +232,7 @@ if (!function_exists('daniel_lucia_woocommerce_header_cart')) {
 				?>
 			</li>
 		</ul>
-<?php
+		<?php
 	}
 }
 
@@ -245,62 +245,67 @@ add_action('init', function () {
 });
 
 /**
+ * Quitamos meta de la ficha de producto
+ */
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
+
+/**
  * Movemos bloques
  */
-remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
-remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15 );
-remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10);
+remove_action('woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15);
+remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
 
-add_action( 'woocommerce_custom_after_content', 'woocommerce_output_product_data_tabs', 10 );
-add_action( 'woocommerce_custom_after_content', 'woocommerce_upsell_display', 15 );
-add_action( 'woocommerce_custom_after_content', 'woocommerce_output_related_products', 20 );
+add_action('woocommerce_custom_after_content', 'woocommerce_output_product_data_tabs', 10);
+add_action('woocommerce_custom_after_content', 'woocommerce_upsell_display', 15);
+add_action('woocommerce_custom_after_content', 'woocommerce_output_related_products', 20);
 
 
 /**
  * Plantilla para WooCommerce
  */
-if ( ! function_exists( 'woocommerce_content' ) ) {
+if (!function_exists('woocommerce_content')) {
 
-	function woocommerce_content() {
+	function woocommerce_content()
+	{
 
-		if ( is_singular( 'product' ) ) {
+		if (is_singular('product')) {
 
-			while ( have_posts() ) :
+			while (have_posts()) :
 				the_post();
-				wc_get_template_part( 'content', 'single-product' );
+				wc_get_template_part('content', 'single-product');
 			endwhile;
-
 		} else {
-			?>
+		?>
 
-			<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
+			<?php if (apply_filters('woocommerce_show_page_title', true)) : ?>
 
 				<h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
 
 			<?php endif; ?>
 
-			<?php do_action( 'woocommerce_archive_description' ); ?>
+			<?php do_action('woocommerce_archive_description'); ?>
 
-			<?php if ( woocommerce_product_loop() ) : ?>
+			<?php if (woocommerce_product_loop()) : ?>
 
-				<?php do_action( 'woocommerce_before_shop_loop' ); ?>
+				<?php do_action('woocommerce_before_shop_loop'); ?>
 
 				<?php woocommerce_product_loop_start(); ?>
 
-				<?php if ( wc_get_loop_prop( 'total' ) ) : ?>
-					<?php while ( have_posts() ) : ?>
+				<?php if (wc_get_loop_prop('total')) : ?>
+					<?php while (have_posts()) : ?>
 						<?php the_post(); ?>
-						<?php wc_get_template_part( 'content', 'product' ); ?>
+						<?php wc_get_template_part('content', 'product'); ?>
 					<?php endwhile; ?>
 				<?php endif; ?>
 
 				<?php woocommerce_product_loop_end(); ?>
 
-				<?php do_action( 'woocommerce_after_shop_loop' ); ?>
+				<?php do_action('woocommerce_after_shop_loop'); ?>
 
-				<?php
+<?php
 			else :
-				do_action( 'woocommerce_no_products_found' );
+				do_action('woocommerce_no_products_found');
 			endif;
 		}
 	}
