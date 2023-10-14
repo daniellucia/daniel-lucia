@@ -81,7 +81,7 @@ form.cart .input-text {
  */
 
 .woocommerce-checkout .container-columns {
-	max-width: 960px;
+	max-width: 1160px;
 	margin: 0 auto;
 }
 
@@ -91,4 +91,21 @@ form.cart .input-text {
 
 .woocommerce-checkout .woocommerce-billing-fields__field-wrapper {
 	margin: 0 0 calc(var(--space-basic) / 2) 0;
+}
+.woocommerce-checkout .shop_table {
+	margin: 0 0 calc(var(--space-basic) / 2) 0;
+}
+
+.shop_table {
+    width: 100%;
+}
+
+.shop_table td, .shop_table th {
+	padding: 5px;
+	text-align: left;
+}
+.shop_table td:last-child, .shop_table th:last-child {
+	text-align: right;
+}
+
 }
