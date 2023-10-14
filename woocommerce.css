@@ -118,6 +118,37 @@ form.cart .added_to_cart {
 	padding: 10px;
 }
 
+.woocommerce-checkout .wc_payment_methods {
+	margin: 0 0 calc(var(--space-basic) / 2) 0;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.woocommerce-checkout .wc_payment_methods li {
+	cursor: pointer;
+	position: relative;
+	padding-left: 30px;
+}
+
+.woocommerce-checkout .wc_payment_methods li label {
+	font-weight: bold;
+}
+
+.woocommerce-checkout .wc_payment_methods li input {
+	position: absolute;
+	left: 0;
+	top: 2px;
+}
+
+.woocommerce-checkout .wc_payment_methods li a {
+	font-weight: normal;
+	margin-left: 5px;
+}
+
+.woocommerce-checkout .wc_payment_methods li img {
+	display: none;
+}
 .shop_table {
 	width: 100%;
 }
