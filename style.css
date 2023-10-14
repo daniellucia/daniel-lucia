@@ -250,6 +250,14 @@ article.post:after {
     bottom: calc(var(--space-basic) * -2);
 }
 
+.single article.post {
+    margin: 0 0 calc(var(--space-basic) * 2) 0;
+}
+
+.single article.post:after {
+    display: none;
+}
+
 .home-latest-post article.post:first-child {
     margin-top: 0;
 }
