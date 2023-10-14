@@ -310,3 +310,13 @@ if (!function_exists('woocommerce_content')) {
 		}
 	}
 }
+
+
+/**
+ * Quitamos todas las pestañas de la ficha de producto
+ */
+add_filter('woocommerce_product_tabs', function ($tabs) {
+	return [];
+}, 98);
+
+
