@@ -32,6 +32,10 @@ div.product .summary .price {
 	font-size: 25px;
 }
 
+section.related {
+	margin: var(--space-basic) 0 0 0;
+}
+
 /**
  * Botón comprar y cantidad
  */
@@ -115,4 +119,13 @@ form.cart .input-text {
 
 .shop_table td:last-child, .shop_table th:last-child {
 	text-align: right;
+}
+
+/**
+ * listado de productos
+ */
+ul.products {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: var(--space-basic);
 }

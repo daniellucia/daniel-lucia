@@ -4,12 +4,12 @@
     justify-content: space-between;
 }
 
-.widget-title, .woocommerce-checkout .checkout.woocommerce-checkout h3 {
+.widget-title, section.related h2, .woocommerce-checkout .checkout.woocommerce-checkout h3 {
     font-size: 24px;
     margin: 0 0 20px 0;
 }
 
-.widget-title:after, .woocommerce-checkout .checkout.woocommerce-checkout h3:after {
+.widget-title:after, section.related h2:after, .woocommerce-checkout .checkout.woocommerce-checkout h3:after {
     content: "";
     height: 4px;
     width: 56px;
