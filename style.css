@@ -321,6 +321,10 @@ article.post .entry-footer {
     display: inline-block;
 }
 
+.button:hover {
+    opacity: .85;
+}
+
 .form-row {
     display: flex;
     flex-direction: column;
