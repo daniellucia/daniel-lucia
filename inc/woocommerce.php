@@ -378,3 +378,10 @@ remove_action('woocommerce_single_product_summary', 'woocommerce_template_single
 add_action('woocommerce_single_product_summary', function () {
 	echo the_content();
 });
+
+/**
+ * Deshabilitar zoom imagenes
+ */
+add_action( 'wp', function() {
+    remove_theme_support( 'wc-product-gallery-zoom' );
+}, 100 );

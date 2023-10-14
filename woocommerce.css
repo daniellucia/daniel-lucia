@@ -36,7 +36,7 @@ section.related {
 	margin: var(--space-basic) 0 0 0;
 }
 
-div.product .woocommerce-product-gallery__image {
+div.product .wp-post-image {
 	border-radius: var(--border-radius-min);
 }
 
