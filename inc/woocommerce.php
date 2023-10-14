@@ -323,9 +323,40 @@ add_filter('woocommerce_product_tabs', function ($tabs) {
  * Sobrescribimos para dar estilo
  */
 
- if (!function_exists('woocommerce_template_loop_product_title')) {
+if (!function_exists('woocommerce_template_loop_product_title')) {
 	function woocommerce_template_loop_product_title()
 	{
 		echo '<h3 class="' . esc_attr(apply_filters('woocommerce_product_loop_title_classes', 'woocommerce-loop-product__title')) . '">' . get_the_title() . '</h3>';
 	}
+}
+
+
+/**
+ * Mostramos gratis en vez de 0.00
+ */
+add_filter('woocommerce_get_price_html', 'custom_change_price_free', 9999, 2);
+function custom_change_price_free($price, $product)
+{
+	if ($product->is_type('variable')) {
+		$prices = $product->get_variation_prices(true);
+		$min_price = current($prices['price']);
+
+		if ($min_price === 0) {
+			$max_price = end($prices['price']);
+			$min_reg_price = current($prices['regular_price']);
+			$max_reg_price = end($prices['regular_price']);
+
+			if ($min_price !== $max_price) {
+				$price = wc_format_price_range(__('Free', 'woocommerce'), $max_price) . $product->get_price_suffix();
+			} elseif ($product->is_on_sale() && $min_reg_price === $max_reg_price) {
+				$price = wc_format_sale_price(wc_price($max_reg_price), __('Free', 'woocommerce')) . $product->get_price_suffix();
+			} else {
+				$price = __('Free', 'woocommerce');
+			}
+		}
+	} elseif ($product->get_price() == 0) {
+		$price = '<span class="woocommerce-Price-amount amount">' . __('Free', 'woocommerce') . '</span>';
+	}
+
+	return $price;
 }
