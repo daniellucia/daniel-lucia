@@ -240,9 +240,7 @@ if (!function_exists('daniel_lucia_woocommerce_header_cart')) {
 /**
  * Eliminamos breadcrumb woocommerce
  */
-add_action('init', 'dl_remove_breadcrumbs');
-
-function dl_remove_breadcrumbs()
-{
+add_action('init', function() {
 	remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
-}
+});
+
