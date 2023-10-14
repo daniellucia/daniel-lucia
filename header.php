@@ -13,7 +13,7 @@
 
 <div id="page" class="site">
 
-	<?php if (!is_checkout()): ?>
+	<?php if (!is_checkout() && !is_cart()): ?>
 		<header id="masthead" class="site-header">
 			<div class="site-branding">
 				<?php the_custom_logo(); ?>
@@ -39,7 +39,7 @@
 		</header>
 	<?php endif; ?>
 
-	<?php if (function_exists('bcn_display') && !is_front_page() && !is_checkout()): ?>
+	<?php if (function_exists('bcn_display') && !is_front_page() && !is_checkout() && !is_cart()): ?>
 		<div class="breadcrumbs">
 			<?php bcn_display(); ?>
 		</div>

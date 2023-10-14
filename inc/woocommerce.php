@@ -325,3 +325,10 @@ function custom_change_price_free($price, $product)
 
 	return $price;
 }
+
+
+/**
+ * Quitamos volver a pedir
+ */
+
+remove_action('woocommerce_order_details_after_order_table', 'woocommerce_order_again_button');

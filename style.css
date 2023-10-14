@@ -93,7 +93,7 @@ p:last-child {
     margin: 0;
 }
 
-ul {
+ul, ol {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -109,12 +109,12 @@ ul {
     }
 }
 
-.widget-title, section.related>h2, .woocommerce-checkout .checkout.woocommerce-checkout h3 {
+.widget-title, section.related>h2, .woocommerce-checkout .checkout.woocommerce-checkout h3, .woocommerce-cart-content .cart-collaterals h2, .woocommerce-order-received .woocommerce-order h2 {
     font-size: 24px;
     margin: 0 0 20px 0;
 }
 
-.widget-title:after, section.related>h2:after, .woocommerce-checkout .checkout.woocommerce-checkout h3:after {
+.widget-title:after, section.related>h2:after, .woocommerce-checkout .checkout.woocommerce-checkout h3:after, .woocommerce-cart-content .cart-collaterals h2:after, .woocommerce-order-received .woocommerce-order h2:after {
     content: "";
     height: 4px;
     width: 56px;
@@ -358,17 +358,33 @@ article.post .entry-footer {
     border-radius: calc(var(--border-radius)/2);
     padding: calc(var(--space-basic) / 3);
     display: inline-block;
+    text-align: center;
 }
 
 .button:hover {
     opacity: .85;
 }
 
-.button.ajax_add_to_cart {
+.button.ajax_add_to_cart, .button.button-link, .button.alt {
     background-color: transparent;
     padding: 0;
     color: var(--text-color);
     text-decoration: underline;
+}
+
+.button.alt {
+    color: #c1191b;
+}
+
+.button.checkout-button {
+    width: 100%;
+}
+
+.input-text {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #c8cace;
+    border-radius: 4px;
 }
 
 .form-row {
@@ -383,9 +399,4 @@ article.post .entry-footer {
     margin: 0;
 }
 
-.form-row .input-text {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #c8cace;
-    border-radius: 4px;
-}
+.form-row .input-text {}
