@@ -13,22 +13,24 @@
 
 <div id="page" class="site">
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php the_custom_logo(); ?>
-		</div>
+	<?php if (!is_checkout()): ?>
+		<header id="masthead" class="site-header">
+			<div class="site-branding">
+				<?php the_custom_logo(); ?>
+			</div>
 
-		<nav id="site-navigation" class="main-navigation">
-			<?php
-			wp_nav_menu(
-				[
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				]
-			);
-			?>
-		</nav>
-	</header>
+			<nav id="site-navigation" class="main-navigation">
+				<?php
+				wp_nav_menu(
+					[
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					]
+				);
+				?>
+			</nav>
+		</header>
+	<?php endif; ?>
 
 	<?php 
 	if (function_exists('bcn_display') && !is_front_page()) {
