@@ -32,10 +32,9 @@
 		</header>
 	<?php endif; ?>
 
-	<?php 
-	if (function_exists('bcn_display') && !is_front_page()) {
-		echo '<div class="breadcrumbs">';
-		bcn_display();
-		echo '</div>';
-	}
-	?>
+	<?php if (function_exists('bcn_display') && !is_front_page() && !is_checkout()): ?>
+		<div class="breadcrumbs">
+			<?php bcn_display(); ?>
+		</div>
+	<?php endif; ?>
+
