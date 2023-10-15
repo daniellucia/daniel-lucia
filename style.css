@@ -100,7 +100,7 @@ ul, ol {
 }
 
 .site {
-    padding: 20px;
+    padding: calc(var(--space-basic)/2);
 }
 
 @media (min-width: 768px) {
@@ -129,7 +129,19 @@ ul, ol {
 .site-header {
     display: flex;
     flex-direction: column;
-    margin: 0 0 var(--space-basic) 0;
+    /*margin: 0 0 var(--space-basic) 0;*/
+    padding: calc(var(--space-basic)/2);
+    border-bottom: 1px solid #c8cace;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 10;
+}
+
+@media (min-width: 768px) {
+    .site-header {
+        padding: var(--space-basic);
+    }
 }
 
 .site-header .custom-logo {
