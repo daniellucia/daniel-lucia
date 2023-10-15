@@ -5,7 +5,10 @@
 	<main id="primary" class="site-main">
 
 		<?php woocommerce_content(); ?>
-        <?php do_action('woocommerce_custom_after_content'); ?>
+
+        <?php if (is_product()): ?>
+            <?php do_action('woocommerce_custom_after_content'); ?>
+        <?php endif; ?>
 
     </main>
 
