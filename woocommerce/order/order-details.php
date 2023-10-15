@@ -113,5 +113,5 @@ do_action('woocommerce_after_order_details', $order);
 ?>
 
 <div class="button-back">
-	<a class="button checkout-button" href="<?php echo get_home_url(); ?>"><?php echo __('Back to web', 'woocommerce'); ?></a>
+	<a class="button checkout-button" href="<?php echo get_home_url(); ?>"><?php echo __('Back to web', 'daniel-lucia'); ?></a>
 </div>
