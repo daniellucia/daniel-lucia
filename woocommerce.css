@@ -149,6 +149,7 @@ form.cart .added_to_cart {
 .woocommerce-checkout .wc_payment_methods li img {
 	display: none;
 }
+
 .shop_table {
 	width: 100%;
 }
@@ -165,6 +166,32 @@ form.cart .added_to_cart {
 /**
  * listado de productos
  */
+.woocommerce-products-header {
+	display: flex;
+	flex-direction: row;
+	gap: var(--space-basic);
+	margin: 0 0 calc(var(--space-basic) * 2) 0;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.woocommerce-products-header .page-title {
+	margin: 0;
+}
+
+.woocommerce-products-header>div {
+	display: flex;
+	flex-direction: column;
+	font-size: 12px;
+	border-left: 1px solid #c8cace;
+	padding: 0 0 0 calc(var(--space-basic) / 2);
+	margin: 0 0 0 calc(var(--space-basic) / 2);
+}
+
+.woocommerce-products-header>div select {
+	font-size: 12px;
+}
+
 ul.products {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -172,10 +199,11 @@ ul.products {
 }
 
 ul.products li.product a {
-	display: flex;
-	flex-direction: column;
-	gap: calc(var(--space-basic)/3);
-	align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--space-basic)/3);
+    /* align-items: center; */
+    line-height: 1.2;
 }
 
 ul.products li.product .button {

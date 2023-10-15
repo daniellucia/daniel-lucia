@@ -225,7 +225,6 @@ add_action('woocommerce_custom_after_content', 'woocommerce_output_product_data_
 add_action('woocommerce_custom_after_content', 'woocommerce_upsell_display', 15);
 add_action('woocommerce_custom_after_content', 'woocommerce_output_related_products', 20);
 
-
 /**
  * Plantilla para WooCommerce
  */
@@ -243,17 +242,20 @@ if (!function_exists('woocommerce_content')) {
 		} else {
 		?>
 
-			<?php if (apply_filters('woocommerce_show_page_title', true)) : ?>
+			<div class="woocommerce-products-header">
+				<?php if (apply_filters('woocommerce_show_page_title', true)) : ?>
 
-				<h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
-
-			<?php endif; ?>
+					<h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
+					<div>
+					<?php do_action('woocommerce_before_shop_loop'); ?>
+					</div>
+					
+				<?php endif; ?>
+			</div>
 
 			<?php do_action('woocommerce_archive_description'); ?>
 
 			<?php if (woocommerce_product_loop()) : ?>
-
-				<?php do_action('woocommerce_before_shop_loop'); ?>
 
 				<?php woocommerce_product_loop_start(); ?>
 
@@ -382,6 +384,6 @@ add_action('woocommerce_single_product_summary', function () {
 /**
  * Deshabilitar zoom imagenes
  */
-add_action( 'wp', function() {
-    remove_theme_support( 'wc-product-gallery-zoom' );
-}, 100 );
+add_action('wp', function () {
+	remove_theme_support('wc-product-gallery-zoom');
+}, 100);
