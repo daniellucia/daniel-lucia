@@ -247,9 +247,9 @@ if (!function_exists('woocommerce_content')) {
 
 					<h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
 					<div>
-					<?php do_action('woocommerce_before_shop_loop'); ?>
+						<?php do_action('woocommerce_before_shop_loop'); ?>
 					</div>
-					
+
 				<?php endif; ?>
 			</div>
 
@@ -270,7 +270,7 @@ if (!function_exists('woocommerce_content')) {
 
 				<?php do_action('woocommerce_after_shop_loop'); ?>
 
-<?php
+			<?php
 			else :
 				do_action('woocommerce_no_products_found');
 			endif;
@@ -285,6 +285,11 @@ if (!function_exists('woocommerce_content')) {
 add_filter('woocommerce_product_tabs', function ($tabs) {
 	return [];
 }, 98);
+
+/**
+ * Añadimos reviews al final de la ficha de producto
+ */
+add_action('woocommerce_custom_after_content', 'comments_template', 5);
 
 /**
  * Sobrescribimos para dar estilo

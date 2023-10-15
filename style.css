@@ -109,18 +109,20 @@ ul, ol {
     }
 }
 
-.widget-title, section.related>h2, 
-.woocommerce-checkout .checkout.woocommerce-checkout h3, 
-.woocommerce-cart-content .cart-collaterals h2, 
+.widget-title, section.related>h2,
+.woocommerce-Reviews-title,
+.woocommerce-checkout .checkout.woocommerce-checkout h3,
+.woocommerce-cart-content .cart-collaterals h2,
 .woocommerce-order-received .woocommerce-order h2 {
     font-size: 24px;
     margin: 0 0 20px 0;
 }
 
-.widget-title:after, 
-section.related>h2:after, 
-.woocommerce-checkout .checkout.woocommerce-checkout h3:after, 
-.woocommerce-cart-content .cart-collaterals h2:after, 
+.widget-title:after,
+.woocommerce-Reviews-title:after,
+section.related>h2:after,
+.woocommerce-checkout .checkout.woocommerce-checkout h3:after,
+.woocommerce-cart-content .cart-collaterals h2:after,
 .woocommerce-order-received .woocommerce-order h2:after,
 .woocommerce-products-header .page-title:after {
     content: "";
@@ -400,7 +402,7 @@ select {
 /**
  * formularios
  */
-.button {
+.button, .form-submit .submit {
     border: none;
     cursor: pointer;
     background-color: #000;
@@ -412,7 +414,7 @@ select {
     text-align: center;
 }
 
-.button:hover {
+.button:hover, .form-submit .submit:hover {
     opacity: .85;
 }
 
@@ -431,20 +433,20 @@ select {
     width: 100%;
 }
 
-.input-text {
+.input-text, .comment-form p input[type=text], .comment-form p input[type=email], .comment-form p textarea {
     width: 100%;
     padding: 5px;
     border: 1px solid #c8cace;
     border-radius: 4px;
 }
 
-.form-row {
+.form-row, .comment-form p {
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
 
-.form-row label {
+.form-row label, .comment-form p label {
     color: #6e6d7a;
     font-size: 0.9em;
     margin: 0;
