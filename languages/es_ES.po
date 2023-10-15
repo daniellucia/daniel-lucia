@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2023-10-15 08:15+0000\n"
-"PO-Revision-Date: 2023-10-15 08:15+0000\n"
+"PO-Revision-Date: 2023-10-15 19:24+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: _s\n"
 "Language: es_ES\n"
@@ -185,6 +185,10 @@ msgstr ""
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
+#: inc/woocommerce.php:430
+msgid "Total downloads"
+msgstr "Descargas totales"
+
 #: inc/widgets/latest-products.php:45
 msgid "Ver plugin"
 msgstr ""
@@ -192,6 +196,10 @@ msgstr ""
 #: inc/woocommerce.php:167
 msgid "View your shopping cart"
 msgstr ""
+
+#: inc/woocommerce.php:432
+msgid "You are the first one to download it"
+msgstr "Eres el primero en descargarlo."
 
 #: page-home.php:20
 msgid "Últimos Posts"

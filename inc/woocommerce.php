@@ -392,3 +392,45 @@ add_action('woocommerce_single_product_summary', function () {
 add_action('wp', function () {
 	remove_theme_support('wc-product-gallery-zoom');
 }, 100);
+
+
+/**
+ * Mostrar total de descargas de un producto
+ */
+
+function daniel_lucia_total_downloads_product()
+{
+	global $wpdb, $product;
+
+	$product_id = (is_object($product) && is_callable(array($product, 'get_id'))) ? $product->get_id() : 0;
+
+	if (empty($product_id)) return;
+
+	$product_type = (is_object($product) && is_callable(array($product, 'get_type'))) ? $product->get_type() : 'simple';
+
+	if ('variable' === $product_type) {
+		$product_ids = $product->get_children();
+	} else {
+		$product_ids = array($product_id);
+	}
+
+	$how_many_product_ids = count($product_ids);
+	$id_placeholder       = array_fill(0, $how_many_product_ids, '%d');
+
+	$count = $wpdb->get_var(
+		$wpdb->prepare(
+			"SELECT SUM( download_count ) AS count
+                FROM {$wpdb->prefix}woocommerce_downloadable_product_permissions
+                WHERE product_id IN (" . implode(',', $id_placeholder) . ")",
+			$product_ids
+		)
+	);
+
+	if (!empty($count)) {
+		echo '<p class="text-count-downloads"><strong>' . esc_html__('Total downloads', 'daniel-lucia') . '</strong>: ' . $count.'</p>';
+	} else {
+		echo '<p class="text-count-downloads">' . esc_html__('You are the first one to download it', 'daniel-lucia') . '</p>';
+	}
+}
+
+add_action('woocommerce_single_product_summary', 'daniel_lucia_total_downloads_product');

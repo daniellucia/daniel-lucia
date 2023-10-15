@@ -32,6 +32,22 @@ div.product .summary .price {
 	font-size: 25px;
 }
 
+.text-count-downloads {
+	margin: 10px 0 0 0;
+	padding: 10px 0 0 0;
+	position: relative;
+}
+
+.text-count-downloads:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 2px;
+	background-color: #c1191b;
+}
+
 section.related {
 	margin: var(--space-basic) 0 0 0;
 }
