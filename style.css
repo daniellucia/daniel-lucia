@@ -339,6 +339,10 @@ article.post .entry-footer {
     border-bottom-left-radius: calc(var(--border-radius)/2);
 }
 
+.mailpoet_submit, .mailpoet_text, .mailpoet_textarea {
+    font-family: var(--font-family-main)!important;
+}
+
 /**
  * páginas
  */

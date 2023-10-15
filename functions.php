@@ -185,6 +185,12 @@ add_filter('get_the_archive_title', function ($title) {
 	return $title;
 });
 
+/**
+ * Deshabilitamos Google Fonts en mailpoet
+ */
+add_filter('mailpoet_display_custom_fonts', function () {
+	return false;
+});
 
 require get_template_directory() . '/inc/custom-header.php';
 require get_template_directory() . '/inc/template-tags.php';
