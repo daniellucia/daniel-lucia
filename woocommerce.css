@@ -212,14 +212,15 @@ ul.products {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 	gap: var(--space-basic);
+	grid-auto-flow: dense;
 }
 
 ul.products li.product a {
-    display: flex;
-    flex-direction: column;
-    gap: calc(var(--space-basic)/3);
-    /* align-items: center; */
-    line-height: 1.2;
+	display: flex;
+	flex-direction: column;
+	gap: calc(var(--space-basic)/3);
+	/* align-items: center; */
+	line-height: 1.2;
 }
 
 ul.products li.product .button {
@@ -230,6 +231,20 @@ ul.products li.product img {
 	border-radius: var(--border-radius-min);
 }
 
+ul.products li.product-category {
+	grid-column: span 2;
+}
+
+ul.products li.product-category a {
+	align-items: center;
+	border: 1px solid #c8cace;
+	border-radius: var(--border-radius-min);
+	padding: calc(var(--space-basic) / 2);
+}
+
+ul.products li.product-category .count {
+	display: none;
+}
 
 /**
  * carrito
