@@ -209,6 +209,13 @@ section.related>h2:after,
 .container-columns {
     display: flex;
     gap: calc(var(--space-basic) * 2);
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .container-columns {
+        flex-direction: row;
+    }
 }
 
 .container-columns>* {
