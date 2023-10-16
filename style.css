@@ -227,7 +227,7 @@ section.related>h2:after,
     display: flex;
     flex-direction: column;
     gap: calc(var(--space-basic) * 2);
-    max-width: 550px;
+    max-width: 470px;
 }
 
 .widget-area .widget {
