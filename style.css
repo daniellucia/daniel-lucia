@@ -269,7 +269,7 @@ article.post {
     background-color: var(--background-light);*/
 }
 
-article.post:after {
+/*article.post:after {
     content: "";
     position: absolute;
     height: 2px;
@@ -278,7 +278,7 @@ article.post:after {
     max-width: 600px;
     background-color: var(--background-dark);
     bottom: calc(var(--space-basic) * -2);
-}
+}*/
 
 .post-thumbnail {
     margin: 0 0 calc(var(--space-basic) * 2) 0;
@@ -295,9 +295,9 @@ article.post:after {
     margin: 0 0 calc(var(--space-basic) * 2) 0;
 }
 
-.single article.post:after {
+/*.single article.post:after {
     display: none;
-}
+}*/
 
 .home-latest-post article.post:first-child {
     margin-top: 0;
