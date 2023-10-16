@@ -24,6 +24,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     --font-family-title: 'Space Grotesk', "Helvetica Neue", Helvetica, Arial, sans-serif;
     --background-light: #f6f8fe;
     --background-dark: #c8cace;
+    --border-color: #dedfe0;
     --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
