@@ -130,7 +130,7 @@ form.cart .added_to_cart {
 .woocommerce-checkout .shop_table {
 	margin: 0 0 calc(var(--space-basic) / 2) 0;
 	border: 1px solid #000;
-	border-radius: 4px;
+	border-radius: var(--border-radius-min);
 	padding: 10px;
 }
 
@@ -291,7 +291,7 @@ ul.products li.product-category .count {
 .woocommerce-cart-content .cart-collaterals {
 	margin: 0 0 calc(var(--space-basic) / 2) 0;
 	border: 1px solid #000;
-	border-radius: 4px;
+	border-radius: var(--border-radius-min);
 	padding: calc(var(--space-basic) / 2);
 }
 
