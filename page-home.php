@@ -6,6 +6,10 @@
 		<?php dynamic_sidebar('home'); ?>
 	</div>
 
+	<div class="home-widgets">
+		<?php dynamic_sidebar('after-home'); ?>
+	</div>
+
 	<?php
 	while (have_posts()) :
 		the_post();

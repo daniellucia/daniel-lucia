@@ -109,6 +109,19 @@ function daniel_lucia_widgets_init()
 			'after_title'   => '</h2>',
 		)
 	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__('After Home', 'daniel-lucia'),
+			'id'            => 'after-home',
+			'description'   => esc_html__('Add widgets here.', 'daniel-lucia'),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+
 }
 add_action('widgets_init', 'daniel_lucia_widgets_init');
 
