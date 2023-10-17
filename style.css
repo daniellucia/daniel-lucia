@@ -58,7 +58,7 @@ html {
 
 body {
     font-family: var(--font-family-main);
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
     padding: 0;
     margin: 0;
@@ -116,7 +116,7 @@ ul, ol {
 .woocommerce-checkout .checkout.woocommerce-checkout h3,
 .woocommerce-cart-content .cart-collaterals h2,
 .woocommerce-order-received .woocommerce-order h2 {
-    font-size: 24px;
+    font-size: 35px;
     margin: 0 0 20px 0;
 }
 
