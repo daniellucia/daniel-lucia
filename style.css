@@ -328,6 +328,30 @@ article.post .entry-footer {
     margin: calc(var(--space-basic) / 2) 0 0 0;
 }
 
+article.post .entry-footer .entry-meta {
+    display: flex;
+    gap: calc(var(--space-basic)/2);
+    flex-direction: row;
+}
+
+article.post .entry-footer .posted-on {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+}
+
+article.post .entry-footer time.published {
+
+}
+article.post .entry-footer time.updated {
+    margin-left: 8px;
+}
+
+article.post .entry-footer time.updated:before {
+    font-weight: bold;
+    content: attr(data-text);
+    margin-right: 4px;
+}
 
 /**
  * buscador
