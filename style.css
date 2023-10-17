@@ -270,10 +270,13 @@ section.related>h2:after,
 
 article.post {
     position: relative;
-    margin: calc(var(--space-basic) * 4) 0 0 0;
+    margin: var(--space-basic) 0 0 0;
     /*padding: var(--space-basic);
     border-radius: var(--border-radius);
-    background-color: var(--background-light);*/
+    background-color: var(--background-light);*/    
+	border: 1px solid var(--border-color);
+	border-radius: var(--border-radius-min);
+	padding: var(--space-basic);
 }
 
 /*article.post:after {
