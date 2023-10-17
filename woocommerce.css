@@ -258,7 +258,6 @@ ul.products li.product-category .count {
 
 .term-description {
 	margin: 0 0 calc(var(--space-basic) * 2) 0;
-	font-size: 17px;
 }
 
 /**
