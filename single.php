@@ -12,8 +12,8 @@
 
 				the_post_navigation(
 					array(
-						'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'daniel-lucia' ) . '</span> <span class="nav-title">%title</span>',
-						'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'daniel-lucia' ) . '</span> <span class="nav-title">%title</span>',
+						'prev_text' => '<span class="nav-title button">%title</span>',
+						'next_text' => '<span class="nav-title button">%title</span>',
 					)
 				);
 
