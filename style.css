@@ -26,6 +26,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     --background-dark: #c8cace;
     --border-color: #dedfe0;
     --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    --max-width: 1450px;
 }
 
 * {
@@ -210,6 +211,8 @@ section.related>h2:after,
     display: flex;
     gap: calc(var(--space-basic) * 2);
     flex-direction: column;
+    max-width: var(--max-width);
+    margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -398,8 +401,8 @@ select {
  * breadcrumb
  */
 .breadcrumbs {
-    margin: 0 0 var(--space-basic) 0;
-    /*font-size: 12px;*/
+    margin: 0 auto var(--space-basic) auto;
+    max-width: var(--max-width);
 }
 
 .breadcrumbs .current-item {

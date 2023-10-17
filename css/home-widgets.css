@@ -2,6 +2,8 @@
     gap: var(--space-basic);
     display: flex;
     justify-content: space-between;
+    max-width: var(--max-width);
+    margin: 0 auto;
 }
 
 .home-widgets .widget {
