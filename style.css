@@ -458,7 +458,7 @@ select {
 /**
  * formularios
  */
-.button, .form-submit .submit {
+.button, .form-submit .submit, .mailpoet_submit {
     border: none;
     cursor: pointer;
     background-color: #000;

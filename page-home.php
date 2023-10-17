@@ -6,7 +6,7 @@
 		<?php dynamic_sidebar('home'); ?>
 	</div>
 
-	<div class="home-widgets">
+	<div class="after-home-widgets">
 		<?php dynamic_sidebar('after-home'); ?>
 	</div>
 
