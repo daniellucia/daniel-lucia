@@ -233,7 +233,7 @@ section.related>h2:after,
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: calc(var(--space-basic) * 2);
+    gap: var(--space-basic);
     max-width: 470px;
 }
 
