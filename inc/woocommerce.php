@@ -270,7 +270,7 @@ if (!function_exists('woocommerce_content')) {
 
 				<?php do_action('woocommerce_after_shop_loop'); ?>
 
-			<?php
+<?php
 			else :
 				do_action('woocommerce_no_products_found');
 			endif;
@@ -427,10 +427,20 @@ function daniel_lucia_total_downloads_product()
 	);
 
 	if (!empty($count)) {
-		echo '<p class="text-count-downloads"><strong>' . esc_html__('Total downloads', 'daniel-lucia') . '</strong>: ' . $count.'</p>';
+		echo '<p class="text-count-downloads"><strong>' . esc_html__('Total downloads', 'daniel-lucia') . '</strong>: ' . $count . '</p>';
 	} else {
 		echo '<p class="text-count-downloads">' . esc_html__('You are the first one to download it', 'daniel-lucia') . '</p>';
 	}
 }
 
 add_action('woocommerce_single_product_summary', 'daniel_lucia_total_downloads_product');
+
+/**
+ * mostramos la descrpición corta en loop
+ */
+
+add_action('woocommerce_shop_loop_item_title', function () {
+	global $product;
+
+	echo $product->post->post_excerpt;
+}, 80);
