@@ -12,29 +12,31 @@
 <?php wp_body_open(); ?>
 
 <?php if (!is_checkout() && !is_cart()): ?>
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php the_custom_logo(); ?>
-		</div>
+	<div class="site-header-container">
+		<header id="masthead" class="site-header">
+			<div class="site-branding">
+				<?php the_custom_logo(); ?>
+			</div>
 
-		<nav id="site-navigation" class="main-navigation">
+			<nav id="site-navigation" class="main-navigation">
+				<?php
+				wp_nav_menu(
+					[
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					]
+				);
+				?>
+			</nav>
+
 			<?php
-			wp_nav_menu(
-				[
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				]
-			);
+				if ( function_exists( 'daniel_lucia_woocommerce_header_cart' ) ) {
+					daniel_lucia_woocommerce_header_cart();
+				}
 			?>
-		</nav>
 
-		<?php
-			if ( function_exists( 'daniel_lucia_woocommerce_header_cart' ) ) {
-				daniel_lucia_woocommerce_header_cart();
-			}
-		?>
-
-	</header>
+		</header>
+	</div>
 <?php endif; ?>
 
 <div id="page" class="site">

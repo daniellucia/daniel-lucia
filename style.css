@@ -138,11 +138,7 @@ section.related>h2:after,
 /**
  * header
  */
-.site-header {
-    display: flex;
-    flex-direction: column;
-    /*margin: 0 0 var(--space-basic) 0;*/
-    padding: calc(var(--space-basic)/2);
+.site-header-container {
     border-bottom: 1px solid #c8cace;
     position: sticky;
     top: 0;
@@ -150,9 +146,17 @@ section.related>h2:after,
     z-index: 10;
 }
 
+.site-header {
+    display: flex;
+    flex-direction: column;
+    padding: calc(var(--space-basic)/2) 0;
+    margin: 0 auto;
+    max-width: var(--max-width);
+}
+
 @media (min-width: 768px) {
     .site-header {
-        padding: var(--space-basic);
+        padding: var(--space-basic) 0;
     }
 }
 
