@@ -340,8 +340,6 @@ article.post .entry-footer .posted-on {
     flex-direction: row;
 }
 
-article.post .entry-footer time.published {}
-
 article.post .entry-footer time.updated {
     margin-left: 8px;
 }
