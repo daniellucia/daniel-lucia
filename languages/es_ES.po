@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2023-10-15 08:15+0000\n"
-"PO-Revision-Date: 2023-10-15 19:24+0000\n"
+"PO-Revision-Date: 2023-10-17 15:49+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: _s\n"
 "Language: es_ES\n"
@@ -21,17 +21,17 @@ msgstr ""
 #: inc/woocommerce.php:171
 msgid "%d item"
 msgid_plural "%d items"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d elemento"
+msgstr[1] "%d elementos"
 
 #. used between list items, there is a space after the comma
 #: inc/template-tags.php:57
 msgid ", "
-msgstr ""
+msgstr ","
 
 #: functions.php:93 functions.php:105
 msgid "Add widgets here."
-msgstr ""
+msgstr "Añadir widgets aquí"
 
 #: header.php:50 woocommerce/order/order-details.php:116
 msgid "Back to web"
@@ -39,7 +39,7 @@ msgstr "Volver a la web"
 
 #: comments.php:68
 msgid "Comments are closed."
-msgstr ""
+msgstr "Los comentarios están cerrados"
 
 #. 1: comment count number, 2: title.
 #: comments.php:41
@@ -47,101 +47,104 @@ msgstr ""
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1$s comentarios en &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s comentarios en &ldquo;%2$s&rdquo;"
 
 #. %s: Name of current post. Only visible to screen readers
 #: template-parts/content-post.php:28 template-parts/content.php:40
 #, php-format
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr ""
+msgstr "Continua leyendo<span class=\"screen-reader-text\"> \"%s\"</span>"
 
 #. Author of the theme
 msgid "Daniel Lucia"
-msgstr ""
+msgstr "Daniel Lúcia"
 
 #. Name of the theme
 msgid "Daniel Lúcia"
-msgstr ""
+msgstr "Daniel Lúcia"
 
 #. %s: Name of current post. Only visible to screen readers
 #: inc/template-tags.php:94 template-parts/content-page.php:29
 #, php-format
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
-msgstr ""
+msgstr "Editar %s"
 
 #: functions.php:103
 msgid "Home"
-msgstr ""
+msgstr "Home"
 
 #. URI of the theme
 #. Author URI of the theme
 msgid "http://www.daniellucia.es"
-msgstr ""
+msgstr "http://www.daniellucia.es"
 
 #: 404.php:22
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
 msgstr ""
+"Parece que no se ha encontrado nada en esta ubicación. Tal vez probar uno de "
+"los enlaces de abajo o una búsqueda?"
 
 #: template-parts/content-none.php:34
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
+"Parece que no encontramos lo que busca. Tal vez la búsqueda pueda ayudarle."
 
 #. %s: post title
 #: inc/template-tags.php:77
 #, php-format
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
-msgstr ""
+msgstr "Deja un comentario en %s"
 
 #. used between list items, there is a space after the comma
 #: inc/template-tags.php:64
 msgctxt "list item separator"
 msgid ", "
-msgstr ""
+msgstr ","
 
 #: single.php:16
 msgid "Next:"
-msgstr ""
+msgstr "Siguiente"
 
 #: template-parts/content-none.php:4
 msgid "Nothing Found"
-msgstr ""
+msgstr "No se ha encontrado nada"
 
 #. 1: title.
 #: comments.php:35
 #, php-format
 msgid "One thought on &ldquo;%1$s&rdquo;"
-msgstr ""
+msgstr "Un comentario en &ldquo;%1$s&rdquo;"
 
 #: 404.php:18
 msgid "Oops! That page can&rsquo;t be found."
-msgstr ""
+msgstr "¡Uy! No se puede encontrar esa página."
 
 #: template-parts/content-home.php:9 template-parts/content-page.php:15
 #: template-parts/content-post.php:41 template-parts/content.php:53
 msgid "Pages:"
-msgstr ""
+msgstr "Páginas:"
 
 #. %s: post author.
 #: inc/template-tags.php:40
 #, php-format
 msgctxt "post author"
 msgid "by %s"
-msgstr ""
+msgstr "por %s"
 
 #. 1: list of categories.
 #: inc/template-tags.php:60
 #, php-format
 msgid "Posted in %1$s"
-msgstr ""
+msgstr "Publicado en %1$s"
 
 #: single.php:15
 msgid "Previous:"
-msgstr ""
+msgstr "Anterior"
 
 #: functions.php:24
 msgid "Primary"
@@ -158,7 +161,7 @@ msgstr ""
 #: search.php:22
 #, php-format
 msgid "Search Results for: %s"
-msgstr ""
+msgstr "SResultados de búsqueda para: %s"
 
 #: functions.php:91
 msgid "Sidebar"
@@ -169,6 +172,8 @@ msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
+"Lo sentimos, pero nada coincide con sus términos de búsqueda. Inténtelo de "
+"nuevo con otras palabras clave."
 
 #. 1: list of tags.
 #: inc/template-tags.php:67
@@ -191,11 +196,11 @@ msgstr "Descargas totales"
 
 #: inc/widgets/latest-products.php:45
 msgid "Ver plugin"
-msgstr ""
+msgstr "Ver plugin"
 
 #: inc/woocommerce.php:167
 msgid "View your shopping cart"
-msgstr ""
+msgstr "Ver carrito"
 
 #: inc/woocommerce.php:432
 msgid "You are the first one to download it"
@@ -203,4 +208,4 @@ msgstr "Eres el primero en descargarlo."
 
 #: page-home.php:20
 msgid "Últimos Posts"
-msgstr ""
+msgstr "Últimos Posts"
