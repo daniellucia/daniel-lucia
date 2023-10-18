@@ -9,15 +9,7 @@
 	<div class="after-home-widgets">
 		<?php dynamic_sidebar('after-home'); ?>
 	</div>
-
-	<?php
-	while (have_posts()) :
-		the_post();
-
-		get_template_part('template-parts/content', 'home');
-
-	endwhile;
-	?>
+	
 	<div class="container-columns">
 		<div class="home-latest-post">
 
