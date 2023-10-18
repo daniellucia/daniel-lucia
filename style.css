@@ -248,7 +248,7 @@ section.related>h2:after,
     flex-grow: 1;
 }
 
-.container-columns > .site-main {
+.container-columns>.site-main {
     max-width: 960px;
 }
 
@@ -336,6 +336,10 @@ article.post, .search-results article {
 
 .single article.post {
     margin: 0 0 calc(var(--space-basic) * 2) 0;
+}
+
+.single article.post h2 {
+    margin: calc(var(--space-basic) * 2) 0 0 0;
 }
 
 /*.single article.post:after {
