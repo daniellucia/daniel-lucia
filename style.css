@@ -146,7 +146,7 @@ section.related>h2:after,
     top: 0;
     background-color: #fff;
     z-index: 10;
-    box-shadow: 0 0 60px rgba(0,0,0,.1);
+    box-shadow: 0 0 60px rgba(0, 0, 0, .1);
 }
 
 .site-header {
@@ -532,7 +532,7 @@ select {
     width: 100%;
 }
 
-.input-text, .comment-form p input[type=text], .comment-form p input[type=email], .comment-form p textarea {
+.input-text, .comment-form p input[type=text], .comment-form p input[type=email], .comment-form p input[type=url], .comment-form p textarea {
     width: 100%;
     padding: 5px;
     border: 1px solid #c8cace;
@@ -585,11 +585,37 @@ select {
 
 .comment-list .comment .comment-meta {
     margin: 0 0 calc(var(--space-basic) / 2) 0;
+    position: relative;
+    padding-left: 50px;
 }
 
-.comment-list .comment .comment-author {
-    display: flex;
-    gap: calc(var(--space-basic) / 2);
+.comment-list .comment .comment-meta img {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 32px;
+    border-radius: var(--border-radius-min);
 }
 
-.comment-list .comment .comment-metadata {}
+.comment-list .comment .comment-author {}
+
+.comment-list .comment .comment-metadata {
+    font-size: 0.9em;
+}
+
+.comment-list .children .comment {
+    position: relative;
+    padding-left: calc(var(--space-basic) * 1.7);
+}
+
+.comment-list .children .comment:before {
+    content: "";
+    background-image: url(images/iconos/comment-child.svg);
+    width: 60px;
+    height: 60px;
+    left: 0;
+    top: calc(var(--space-basic) - 7px);
+    background-size: contain;
+    display: block;
+    position: absolute;
+}
