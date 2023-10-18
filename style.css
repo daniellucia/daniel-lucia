@@ -385,6 +385,29 @@ article.post .entry-footer time.updated:before, .search-results article .entry-f
     }
 }
 
+.navigation.post-navigation .nav-links a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.navigation.post-navigation .nav-links .nav-previous a:before,
+.navigation.post-navigation .nav-links .nav-next a:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    display: block;
+}
+
+.navigation.post-navigation .nav-links .nav-previous a:before {
+    background-image: url(images/iconos/arrow-left.svg);
+}
+
+.navigation.post-navigation .nav-links .nav-next a:after {
+    background-image: url(images/iconos/arrow-right.svg);
+}
+
 /**
  * buscador
  */
