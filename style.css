@@ -17,6 +17,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 :root {
     --text-color: #0d0c22;
+    --text-color-emphasis: #c1191b;
     --space-basic: 40px;
     --border-radius: 20px;
     --border-radius-min: calc(var(--border-radius) / 2);
@@ -132,7 +133,7 @@ section.related>h2:after,
     content: "";
     height: 4px;
     width: 56px;
-    background-color: #c1191b;
+    background-color: var(--text-color-emphasis);
     display: inline-block;
     margin: 0 0 0 10px;
 }
@@ -377,6 +378,11 @@ article.post .entry-footer .posted-on, .search-results article .entry-footer .po
     flex-direction: row;
 }
 
+article.post .entry-footer time.published {
+    color: var(--text-color-emphasis);
+    font-weight: bold;
+}
+
 article.post .entry-footer time.updated, .search-results article .entry-footer time.updated {
     margin-left: 8px;
 }
@@ -493,7 +499,7 @@ select {
     content: "";
     height: 4px;
     width: 56px;
-    background-color: #c1191b;
+    background-color: var(--text-color-emphasis);
     display: inline-block;
     margin: 0 0 0 10px;
 }
@@ -543,7 +549,7 @@ select {
 }
 
 .button.alt {
-    color: #c1191b;
+    color: var(--text-color-emphasis);
 }
 
 .button.checkout-button {

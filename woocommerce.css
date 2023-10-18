@@ -45,7 +45,7 @@ div.product .summary .price {
 	left: 0;
 	width: 100px;
 	height: 2px;
-	background-color: #c1191b;
+	background-color: var(--text-color-emphasis);
 }
 
 section.related {
@@ -78,7 +78,7 @@ form.cart .input-text {
 
 form.cart .added_to_cart {
 	margin-left: 30px;
-	color: #c1191b;
+	color: var(--text-color-emphasis);
 	text-decoration: underline;
 }
 
@@ -365,6 +365,6 @@ ul.products li.product-category .count {
 .woocommerce-message .button {
 	background-color: transparent;
 	padding: 0;
-	color: #c1191b;
+	color: var(--text-color-emphasis);
 	text-decoration: underline;
 }
