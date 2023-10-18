@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2023-10-15 08:15+0000\n"
-"PO-Revision-Date: 2023-10-17 15:49+0000\n"
+"PO-Revision-Date: 2023-10-18 08:59+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: _s\n"
 "Language: es_ES\n"
@@ -161,7 +161,7 @@ msgstr ""
 #: search.php:22
 #, php-format
 msgid "Search Results for: %s"
-msgstr "SResultados de búsqueda para: %s"
+msgstr "Resultados de búsqueda para: %s"
 
 #: functions.php:91
 msgid "Sidebar"
