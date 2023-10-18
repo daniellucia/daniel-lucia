@@ -112,7 +112,7 @@ ul, ol {
     }
 }
 
-.widget-title, section.related>h2,
+.widget-title, section.related>h2, .comment-respond .comment-reply-title,
 .comments-area .comments-title span,
 .woocommerce-Reviews-title,
 .woocommerce-checkout .checkout.woocommerce-checkout h3,
@@ -122,7 +122,7 @@ ul, ol {
     margin: 0 0 20px 0;
 }
 
-.widget-title:after,
+.widget-title:after, .comment-respond .comment-reply-title:after,
 .comments-area .comments-title span:after,
 .woocommerce-Reviews-title:after,
 section.related>h2:after,
