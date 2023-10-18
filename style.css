@@ -262,6 +262,10 @@ section.related>h2:after,
     max-width: 960px;
 }
 
+.woocommerce-page .container-columns>.site-main {
+    max-width: 100%;
+}
+
 .home .widget-area {
     margin: calc(var(--space-basic) * 2) 0 0 0;
 }
