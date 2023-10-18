@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2023-10-15 08:15+0000\n"
-"PO-Revision-Date: 2023-10-18 08:59+0000\n"
+"PO-Revision-Date: 2023-10-18 09:40+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: _s\n"
 "Language: es_ES\n"
@@ -25,15 +25,19 @@ msgstr[0] "%d elemento"
 msgstr[1] "%d elementos"
 
 #. used between list items, there is a space after the comma
-#: inc/template-tags.php:57
+#: inc/template-tags.php:62
 msgid ", "
 msgstr ","
 
-#: functions.php:93 functions.php:105
+#: functions.php:93 functions.php:105 functions.php:117
 msgid "Add widgets here."
 msgstr "Añadir widgets aquí"
 
-#: header.php:50 woocommerce/order/order-details.php:116
+#: functions.php:115
+msgid "After Home"
+msgstr ""
+
+#: header.php:52 woocommerce/order/order-details.php:116
 msgid "Back to web"
 msgstr "Volver a la web"
 
@@ -45,10 +49,10 @@ msgstr "Los comentarios están cerrados"
 #: comments.php:41
 #, php-format
 msgctxt "comments title"
-msgid "%1$s thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "%1$s comentarios en &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s comentarios en &ldquo;%2$s&rdquo;"
+msgid "%1$s thought on %2$s;"
+msgid_plural "%1$s thoughts on %2$s"
+msgstr[0] "%1$s comentario en %2$s;"
+msgstr[1] "%1$s comentarios en %2$s"
 
 #. %s: Name of current post. Only visible to screen readers
 #: template-parts/content-post.php:28 template-parts/content.php:40
@@ -65,7 +69,7 @@ msgid "Daniel Lúcia"
 msgstr "Daniel Lúcia"
 
 #. %s: Name of current post. Only visible to screen readers
-#: inc/template-tags.php:94 template-parts/content-page.php:29
+#: inc/template-tags.php:99 template-parts/content-page.php:29
 #, php-format
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "Editar %s"
@@ -95,20 +99,20 @@ msgstr ""
 "Parece que no encontramos lo que busca. Tal vez la búsqueda pueda ayudarle."
 
 #. %s: post title
-#: inc/template-tags.php:77
+#: inc/template-tags.php:82
 #, php-format
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "Deja un comentario en %s"
 
 #. used between list items, there is a space after the comma
-#: inc/template-tags.php:64
+#: inc/template-tags.php:69
 msgctxt "list item separator"
 msgid ", "
 msgstr ","
 
-#: single.php:16
-msgid "Next:"
-msgstr "Siguiente"
+#: inc/template-tags.php:28
+msgid "Modified:"
+msgstr ""
 
 #: template-parts/content-none.php:4
 msgid "Nothing Found"
@@ -117,8 +121,8 @@ msgstr "No se ha encontrado nada"
 #. 1: title.
 #: comments.php:35
 #, php-format
-msgid "One thought on &ldquo;%1$s&rdquo;"
-msgstr "Un comentario en &ldquo;%1$s&rdquo;"
+msgid "One thought on %1$s;"
+msgstr "Un comentario en %1$s"
 
 #: 404.php:18
 msgid "Oops! That page can&rsquo;t be found."
@@ -130,21 +134,17 @@ msgid "Pages:"
 msgstr "Páginas:"
 
 #. %s: post author.
-#: inc/template-tags.php:40
+#: inc/template-tags.php:44
 #, php-format
 msgctxt "post author"
 msgid "by %s"
 msgstr "por %s"
 
 #. 1: list of categories.
-#: inc/template-tags.php:60
+#: inc/template-tags.php:65
 #, php-format
 msgid "Posted in %1$s"
 msgstr "Publicado en %1$s"
-
-#: single.php:15
-msgid "Previous:"
-msgstr "Anterior"
 
 #: functions.php:24
 msgid "Primary"
@@ -176,7 +176,7 @@ msgstr ""
 "nuevo con otras palabras clave."
 
 #. 1: list of tags.
-#: inc/template-tags.php:67
+#: inc/template-tags.php:72
 #, php-format
 msgid "Tagged %1$s"
 msgstr ""
@@ -206,6 +206,6 @@ msgstr "Ver carrito"
 msgid "You are the first one to download it"
 msgstr "Eres el primero en descargarlo."
 
-#: page-home.php:20
+#: page-home.php:24
 msgid "Últimos Posts"
 msgstr "Últimos Posts"

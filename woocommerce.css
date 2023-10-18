@@ -205,6 +205,10 @@ form.cart .added_to_cart {
 	border-radius: var(--border-radius-min);
 }
 
+.post-type-archive .woocommerce-products-header>div {
+	display: none;
+}
+
 .woocommerce-products-header>div select {
 	font-size: 12px;
 }

@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-10-15 19:21+0000\n"
+"POT-Creation-Date: 2023-10-18 09:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: _s\n"
@@ -25,15 +25,19 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. used between list items, there is a space after the comma
-#: inc/template-tags.php:57
+#: inc/template-tags.php:62
 msgid ", "
 msgstr ""
 
-#: functions.php:93 functions.php:105
+#: functions.php:93 functions.php:105 functions.php:117
 msgid "Add widgets here."
 msgstr ""
 
-#: header.php:50 woocommerce/order/order-details.php:116
+#: functions.php:115
+msgid "After Home"
+msgstr ""
+
+#: header.php:52 woocommerce/order/order-details.php:116
 msgid "Back to web"
 msgstr ""
 
@@ -45,8 +49,8 @@ msgstr ""
 #: comments.php:41
 #, php-format
 msgctxt "comments title"
-msgid "%1$s thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgid "%1$s thought on %2$s;"
+msgid_plural "%1$s thoughts on %2$s"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -65,7 +69,7 @@ msgid "Daniel Lúcia"
 msgstr ""
 
 #. %s: Name of current post. Only visible to screen readers
-#: inc/template-tags.php:94 template-parts/content-page.php:29
+#: inc/template-tags.php:99 template-parts/content-page.php:29
 #, php-format
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
@@ -92,19 +96,19 @@ msgid ""
 msgstr ""
 
 #. %s: post title
-#: inc/template-tags.php:77
+#: inc/template-tags.php:82
 #, php-format
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
 #. used between list items, there is a space after the comma
-#: inc/template-tags.php:64
+#: inc/template-tags.php:69
 msgctxt "list item separator"
 msgid ", "
 msgstr ""
 
-#: single.php:16
-msgid "Next:"
+#: inc/template-tags.php:28
+msgid "Modified:"
 msgstr ""
 
 #: template-parts/content-none.php:4
@@ -114,7 +118,7 @@ msgstr ""
 #. 1: title.
 #: comments.php:35
 #, php-format
-msgid "One thought on &ldquo;%1$s&rdquo;"
+msgid "One thought on %1$s;"
 msgstr ""
 
 #: 404.php:18
@@ -127,20 +131,16 @@ msgid "Pages:"
 msgstr ""
 
 #. %s: post author.
-#: inc/template-tags.php:40
+#: inc/template-tags.php:44
 #, php-format
 msgctxt "post author"
 msgid "by %s"
 msgstr ""
 
 #. 1: list of categories.
-#: inc/template-tags.php:60
+#: inc/template-tags.php:65
 #, php-format
 msgid "Posted in %1$s"
-msgstr ""
-
-#: single.php:15
-msgid "Previous:"
 msgstr ""
 
 #: functions.php:24
@@ -171,7 +171,7 @@ msgid ""
 msgstr ""
 
 #. 1: list of tags.
-#: inc/template-tags.php:67
+#: inc/template-tags.php:72
 #, php-format
 msgid "Tagged %1$s"
 msgstr ""
@@ -201,6 +201,6 @@ msgstr ""
 msgid "You are the first one to download it"
 msgstr ""
 
-#: page-home.php:20
+#: page-home.php:24
 msgid "Últimos Posts"
 msgstr ""

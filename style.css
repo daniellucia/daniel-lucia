@@ -112,6 +112,7 @@ ul, ol {
 }
 
 .widget-title, section.related>h2,
+.comments-area .comments-title span,
 .woocommerce-Reviews-title,
 .woocommerce-checkout .checkout.woocommerce-checkout h3,
 .woocommerce-cart-content .cart-collaterals h2,
@@ -121,6 +122,7 @@ ul, ol {
 }
 
 .widget-title:after,
+.comments-area .comments-title span:after,
 .woocommerce-Reviews-title:after,
 section.related>h2:after,
 .woocommerce-checkout .checkout.woocommerce-checkout h3:after,
@@ -474,7 +476,7 @@ select {
 /**
  * formularios
  */
-.button, .form-submit .submit, .mailpoet_submit {
+.button, .form-submit .submit, .mailpoet_submit, .comment-reply-link {
     border: none;
     cursor: pointer;
     background-color: #000;
@@ -486,11 +488,11 @@ select {
     text-align: center;
 }
 
-.button:hover, .form-submit .submit:hover {
+.button:hover, .form-submit .submit:hover, .comment-reply-link:hover {
     opacity: .85;
 }
 
-.button.ajax_add_to_cart, .button.button-link, .button.alt {
+.button.ajax_add_to_cart, .button.button-link, .button.alt, .comment-reply-link {
     background-color: transparent;
     padding: 0;
     color: var(--text-color);
@@ -525,3 +527,44 @@ select {
 }
 
 .form-row .input-text {}
+
+/**
+ * Comentarios
+ */
+
+.comments-area .comments-title {
+    font-size: 22px;
+}
+
+.comments-area .comments-title span {
+    display: block;
+    max-width: 650px;
+}
+
+.comment-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-basic);
+    margin: var(--space-basic) 0;
+}
+
+.comment-list .comment {
+    padding: var(--space-basic);
+    border-radius: var(--border-radius);
+    background-color: var(--background-light);
+}
+
+.comment-list .comment .reply {
+    margin: calc(var(--space-basic) / 2) 0 0 0;
+}
+
+.comment-list .comment .comment-meta {
+    margin: 0 0 calc(var(--space-basic) / 2) 0;
+}
+
+.comment-list .comment .comment-author {
+    display: flex;
+    gap: calc(var(--space-basic) / 2);
+}
+
+.comment-list .comment .comment-metadata {}
