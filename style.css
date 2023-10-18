@@ -141,11 +141,12 @@ section.related>h2:after,
  * header
  */
 .site-header-container {
-    border-bottom: 1px solid #c8cace;
+    /* border-bottom: 1px solid #c8cace; */
     position: sticky;
     top: 0;
     background-color: #fff;
     z-index: 10;
+    box-shadow: 0 0 60px rgba(0,0,0,.1);
 }
 
 .site-header {
@@ -489,6 +490,7 @@ select {
 .breadcrumbs {
     margin: 0 auto var(--space-basic) auto;
     max-width: var(--max-width);
+    font-size: 0.9em;
 }
 
 .breadcrumbs .current-item {
