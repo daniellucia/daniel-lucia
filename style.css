@@ -178,6 +178,22 @@ section.related>h2:after,
     flex-direction: column;
     text-align: right;
     line-height: 1.2;
+    padding: calc(var(--space-basic) / 4) 40px calc(var(--space-basic) / 4) calc(var(--space-basic) / 3);
+    border-radius: var(--border-radius-min);
+    background-color: var(--background-light);
+    position: relative;
+}
+
+.site-header .site-header-cart a:before {
+    background-image: url(images/iconos/cart.svg);
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    right: 10px;
+    position: absolute;
+    background-size: contain;
+    margin-top: -10px;
 }
 
 .site-header .site-header-cart a .amount {
