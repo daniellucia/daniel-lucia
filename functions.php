@@ -138,8 +138,10 @@ function daniel_lucia_scripts()
 		wp_enqueue_script('comment-reply');
 	}
 
-	wp_register_script('daniellucia-woocommerce', get_template_directory_uri() . '/js/woocommerce.js', array('jquery'), '1.0', true);
+	wp_register_script('daniellucia-woocommerce', get_template_directory_uri() . '/js/woocommerce.js', array('jquery'), _S_VERSION);
+	wp_register_script('daniellucia-functions', get_template_directory_uri() . '/js/functions.js', array('jquery'), _S_VERSION);
 	wp_enqueue_script('daniellucia-woocommerce');
+	wp_enqueue_script('daniellucia-functions');
 }
 
 add_action('wp_enqueue_scripts', 'daniel_lucia_scripts');
