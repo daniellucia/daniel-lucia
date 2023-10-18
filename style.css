@@ -248,6 +248,10 @@ section.related>h2:after,
     flex-grow: 1;
 }
 
+.container-columns > .site-main {
+    max-width: 960px;
+}
+
 .home .widget-area {
     margin: calc(var(--space-basic) * 2) 0 0 0;
 }
@@ -286,6 +290,16 @@ section.related>h2:after,
 /**
  * post
  */
+
+pre {
+    overflow: auto;
+    max-width: 100%;
+    padding: calc(var(--space-basic) / 2);
+    border-radius: var(--border-radius-min);
+    background-color: var(--background-light);
+    font-size: 0.8em;
+    margin: calc(var(--space-basic) / 2) 0;
+}
 
 article.post, .search-results article {
     position: relative;
