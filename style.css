@@ -121,8 +121,21 @@ ul, ol {
 .woocommerce-checkout .checkout.woocommerce-checkout h3,
 .woocommerce-cart-content .cart-collaterals h2,
 .woocommerce-order-received .woocommerce-order h2 {
-    font-size: 35px;
-    margin: 0 0 20px 0;
+    font-size: 25px;
+    margin: 0 0 10px 0;
+}
+
+@media (min-width: 768px) {
+
+    .widget-title, section.related>h2, .comment-respond .comment-reply-title,
+    .comments-area .comments-title span,
+    .woocommerce-Reviews-title,
+    .woocommerce-checkout .checkout.woocommerce-checkout h3,
+    .woocommerce-cart-content .cart-collaterals h2,
+    .woocommerce-order-received .woocommerce-order h2 {
+        font-size: 35px;
+        margin: 0 0 20px 0;
+    }
 }
 
 .widget-title:after, .comment-respond .comment-reply-title:after,
@@ -367,10 +380,17 @@ article.post, .search-results article, article.page {
 }
 
 article.post .entry-title, .woocommerce .product_title, .entry-header h1.entry-title, .woocommerce-products-header .page-title, .search-results article .entry-title {
-    font-size: 45px;
+    font-size: 30px;
     max-width: 750px;
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
     line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+    article.post .entry-title, .woocommerce .product_title, .entry-header h1.entry-title, .woocommerce-products-header .page-title, .search-results article .entry-title {
+        font-size: 45px;
+        margin: 0 0 20px 0;
+    }
 }
 
 article.post .entry-title a, .woocommerce .product_title a, .search-results article .entry-title a {
@@ -607,8 +627,8 @@ select {
 .form-row .input-text {}
 
 .mailpoet_text {
-    border: 1px solid var(--border-color)!important;
-    border-radius: var(--border-radius-min)!important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: var(--border-radius-min) !important;
 }
 
 /**

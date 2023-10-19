@@ -4,6 +4,13 @@
     justify-content: space-between;
     max-width: var(--max-width);
     margin: 0 auto;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .home-widgets {
+        flex-direction: row;
+    }
 }
 
 .home-widgets .widget {
@@ -75,8 +82,14 @@
 
 .widget.widget_hero_widget h1 {
     margin: 0;
-    font-size: 50px;
+    font-size: 30px;
     line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+    .widget.widget_hero_widget h1 {
+        font-size: 50px; 
+    }
 }
 
 .after-home-widgets {
