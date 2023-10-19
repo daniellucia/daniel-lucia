@@ -507,6 +507,7 @@ select {
     border: 1px solid var(--border-color);
     border-right: none;
 }
+
 .mailpoet_submit, .mailpoet_text, .mailpoet_textarea {
     font-family: var(--font-family-main) !important;
 }
@@ -605,6 +606,11 @@ select {
 
 .form-row .input-text {}
 
+.mailpoet_text {
+    border: 1px solid var(--border-color)!important;
+    border-radius: var(--border-radius-min)!important;
+}
+
 /**
  * Comentarios
  */
@@ -670,4 +676,24 @@ select {
     background-size: contain;
     display: block;
     position: absolute;
+}
+
+/**
+ * footer
+ */
+
+.site-footer {
+    background-color: #000;
+    color: #fff;
+    padding: var(--space-basic) 0;
+    margin: calc(var(--space-basic) * 2) 0 0 0;
+}
+
+.site-footer .site-info {
+    max-width: var(--max-width);
+    margin: 0 auto 0 auto;
+}
+
+.site-footer a {
+    color: #fff;
 }
