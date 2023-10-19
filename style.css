@@ -67,7 +67,7 @@ body {
     -webkit-font-feature-settings: 'ss01';
     font-feature-settings: 'ss01';
     line-height: 1.6;
-    background-color: #f8f7f4;
+    background-color: var(--background-dark);
 }
 
 select, button, input, textarea {
@@ -205,7 +205,7 @@ section.related>h2:after,
     line-height: 1.2;
     padding: calc(var(--space-basic) / 4) 40px calc(var(--space-basic) / 4) calc(var(--space-basic) / 3);
     border-radius: var(--border-radius-min);
-    background-color: var(--background-light);
+    background-color: var(--background-dark);
     position: relative;
 }
 
@@ -244,12 +244,19 @@ section.related>h2:after,
 .main-navigation .menu {
     display: flex;
     flex-direction: row;
-    gap: var(--space-basic);
+    gap: calc(var(--space-basic)/3);
 }
 
 .main-navigation .menu a {
     text-decoration: none;
     font-weight: 600;
+    display: inline-block;
+    padding: 2px calc(var(--space-basic)/2);
+    border-radius: var(--border-radius-min);
+}
+
+.main-navigation .menu .current-menu-item a {
+    background-color: var(--background-dark);
 }
 
 .container-columns {
