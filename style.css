@@ -167,13 +167,13 @@ section.related>h2:after,
 }
 
 .site-header-container.is-pinned .site-header {
-    padding: calc(var(--space-basic)/4) 0;
+    padding: calc(var(--space-basic)/4) var(--space-basic);
 }
 
 .site-header {
     display: flex;
     flex-direction: column;
-    padding: calc(var(--space-basic)/2) 0;
+    padding: calc(var(--space-basic)/2) var(--space-basic);
     margin: 0 auto;
     max-width: var(--max-width);
     transition: all 0.2s ease;
@@ -181,7 +181,7 @@ section.related>h2:after,
 
 @media (min-width: 768px) {
     .site-header {
-        padding: var(--space-basic) 0;
+        padding: var(--space-basic);
     }
 }
 
