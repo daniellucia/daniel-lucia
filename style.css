@@ -115,7 +115,7 @@ ul, ol {
     }
 }
 
-.widget-title, section.related>h2, .comment-respond .comment-reply-title,
+.widget-title, .widget.popular-posts h2, section.related>h2, .comment-respond .comment-reply-title,
 .comments-area .comments-title span,
 .woocommerce-Reviews-title,
 .woocommerce-checkout .checkout.woocommerce-checkout h3,
@@ -127,7 +127,7 @@ ul, ol {
 
 @media (min-width: 768px) {
 
-    .widget-title, section.related>h2, .comment-respond .comment-reply-title,
+    .widget-title, .widget.popular-posts h2, section.related>h2, .comment-respond .comment-reply-title,
     .comments-area .comments-title span,
     .woocommerce-Reviews-title,
     .woocommerce-checkout .checkout.woocommerce-checkout h3,
@@ -138,7 +138,7 @@ ul, ol {
     }
 }
 
-.widget-title:after, .comment-respond .comment-reply-title:after,
+.widget-title:after, .widget.popular-posts h2:after, .comment-respond .comment-reply-title:after,
 .comments-area .comments-title span:after,
 .woocommerce-Reviews-title:after,
 section.related>h2:after,
@@ -723,4 +723,11 @@ select {
 
 .site-footer a {
     color: #fff;
+}
+
+.footer-widgets {
+    display: flex;
+    gap: calc(var(--space-basic) * 2);
+    grid-auto-flow: dense;
+    margin: 0 0 var(--space-basic) 0;
 }

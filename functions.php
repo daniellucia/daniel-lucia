@@ -12,6 +12,7 @@ if (!defined('_S_VERSION')) {
 	define('_S_VERSION', '1.0.2');
 }
 
+define('NUMBER_SIDEBAR_WIDGETS', 3);
 
 function daniel_lucia_setup()
 {
@@ -122,6 +123,19 @@ function daniel_lucia_widgets_init()
 		)
 	);
 
+	for ($i = 1; $i <= (int)NUMBER_SIDEBAR_WIDGETS; $i++) {
+		register_sidebar(
+			array(
+				'name'          => esc_html__('Footer #' . $i, 'daniel-lucia'),
+				'id'            => 'footer-' . $i,
+				'description'   => esc_html__('Add widgets here.', 'daniel-lucia'),
+				'before_widget' => '<section id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</section>',
+				'before_title'  => '<h2 class="widget-title">',
+				'after_title'   => '</h2>',
+			)
+		);
+	}
 }
 add_action('widgets_init', 'daniel_lucia_widgets_init');
 
