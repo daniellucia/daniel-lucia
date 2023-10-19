@@ -120,9 +120,33 @@ form.cart .added_to_cart {
 }
 
 .button-back {
-	margin-bottom: calc(var(--space-basic) / 2);
-	padding-bottom: calc(var(--space-basic) / 2);
-	border-bottom: 1px solid var(--border-color);
+    margin-bottom: calc(var(--space-basic) / 2);
+    /* padding-bottom: calc(var(--space-basic) / 2); */
+    /* border-bottom: 1px solid var(--border-color); */
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: calc(var(--space-basic)/3) calc(var(--space-basic)/2);
+    background-color: var(--background-light);
+}
+
+.button-back a {
+	display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.button-back a:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    display: block;
+    transition: all 0.2s ease;
+	background-image: url(images/iconos/arrow-left.svg);
+}
+
+.button-back a:hover:before {
+    translate: -5px 0;
 }
 
 /*.woocommerce-checkout.logged-in .container-columns {
