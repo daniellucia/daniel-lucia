@@ -82,6 +82,12 @@ form.cart .button {
 
 form.cart .input-text {
 	background-color: var(--background-light);
+	border: 1px solid var(--border-color);
+	border-right: none;
+	transition: all 0.2s ease;
+	border-radius: 0;
+	border-top-left-radius: calc(var(--border-radius)/2);
+    border-bottom-left-radius: calc(var(--border-radius)/2);
 }
 
 form.cart .added_to_cart {
