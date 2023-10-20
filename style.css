@@ -373,7 +373,7 @@ pre {
     border-radius: var(--border-radius-min);
     background-color: var(--background-dark);
     border: 1px solid var(--border-color);
-    font-size: 0.8em;
+    /*font-size: 0.8em;*/
     margin: calc(var(--space-basic) / 2) 0;
 }
 
