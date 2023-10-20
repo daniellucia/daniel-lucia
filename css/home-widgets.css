@@ -45,6 +45,7 @@
 .widget.widget_latest_woocommerce_products_widget ul li {
     display: flex;
     gap: 20px;
+    justify-content: flex-start;
 }
 
 .widget.widget_latest_woocommerce_products_widget li p {
@@ -64,6 +65,8 @@
 
 .widget.widget_latest_woocommerce_products_widget img {
     border-radius: var(--border-radius-min);
+    height: 75px;
+    width: 75px;
 }
 
 .widget.widget_hero_widget {

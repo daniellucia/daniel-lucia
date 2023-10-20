@@ -20,6 +20,7 @@
 
 			<?php get_search_form(); ?>
 
+			<input type="checkbox" id="menu-toggle" />
 			<div class="menu-container">
 				<nav id="site-navigation" class="main-navigation">
 					<?php
@@ -43,6 +44,15 @@
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/iconos/user.svg" alt="<?php echo __('My account', 'daniel-lucia'); ?>" height="32" width="32"/>
 					</a>
 				</div>
+
+			</div>
+
+			<div class="menu-link">
+				<label for="menu-toggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</label>
 			</div>
 
 		</header>

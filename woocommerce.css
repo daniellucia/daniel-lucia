@@ -16,7 +16,7 @@ div.product {
 	box-shadow: var(--box-shadow);
 }
 
-@media (min-width: 768px) {
+@media (min-width: var(--breakpoint-mobile)) {
 	div.product {
 		flex-direction: row;
 		gap: calc(var(--space-basic) * 2);
@@ -115,7 +115,7 @@ form.cart .added_to_cart {
 	width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: var(--breakpoint-mobile)) {
 	.woocommerce-login {
 		flex-direction: row;
 	}
@@ -373,7 +373,7 @@ ul.products li.product-category .count {
 	margin: 0 0 calc(var(--space-basic) * 2) 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: var(--breakpoint-mobile)) {
 	.woocommerce-cart-content {
 		flex-direction: row;
 		gap: calc(var(--space-basic) * 2);
@@ -487,7 +487,7 @@ ul.products li.product-category .count {
 	flex-direction: column;
 }
 
-@media (min-width: 768px) {
+@media (min-width: var(--breakpoint-mobile)) {
 	.woocommerce-account .entry-content .woocommerce {
 		flex-direction: row;
 	}
@@ -511,7 +511,7 @@ ul.products li.product-category .count {
 	margin: var(--space-basic) 0 calc(var(--space-basic) / 2) 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: var(--breakpoint-mobile)) {
 	.woocommerce-MyAccount-navigation {
 		min-width: 300px;
 	}
@@ -559,7 +559,7 @@ ul.products li.product-category .count {
 	border-radius: var(--border-radius-min);
 }
 
-@media (min-width: 768px) {
+@media (min-width: var(--breakpoint-mobile)) {
 	.woocommerce-MyAccount-content .addresses {
 		flex-direction: row;
 	}
