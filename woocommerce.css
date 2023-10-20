@@ -20,6 +20,10 @@ div.product {
 		flex-direction: row;
 		gap: calc(var(--space-basic) * 2);
 	}
+
+	div.product .woocommerce-product-gallery {
+		min-width: 350px;
+	}
 }
 
 .woocommerce .product_title {
@@ -292,6 +296,7 @@ ul.products li.product .button {
 
 ul.products li.product img {
 	border-radius: var(--border-radius-min);
+	margin: 0 0 calc(var(--space-basic) / 2) 0;
 }
 
 /*ul.products li.product-category {
