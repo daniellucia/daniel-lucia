@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-10-18 09:39+0000\n"
+"POT-Creation-Date: 2023-10-20 10:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: _s\n"
@@ -29,15 +29,15 @@ msgstr[1] ""
 msgid ", "
 msgstr ""
 
-#: functions.php:93 functions.php:105 functions.php:117
+#: functions.php:94 functions.php:106 functions.php:118 functions.php:131
 msgid "Add widgets here."
 msgstr ""
 
-#: functions.php:115
+#: functions.php:116
 msgid "After Home"
 msgstr ""
 
-#: header.php:52 woocommerce/order/order-details.php:116
+#: header.php:72 woocommerce/order/order-details.php:116
 msgid "Back to web"
 msgstr ""
 
@@ -74,7 +74,7 @@ msgstr ""
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
-#: functions.php:103
+#: functions.php:104
 msgid "Home"
 msgstr ""
 
@@ -111,6 +111,10 @@ msgstr ""
 msgid "Modified:"
 msgstr ""
 
+#: header.php:44
+msgid "My account"
+msgstr ""
+
 #: template-parts/content-none.php:4
 msgid "Nothing Found"
 msgstr ""
@@ -143,7 +147,7 @@ msgstr ""
 msgid "Posted in %1$s"
 msgstr ""
 
-#: functions.php:24
+#: functions.php:25
 msgid "Primary"
 msgstr ""
 
@@ -160,7 +164,7 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: functions.php:91
+#: functions.php:92
 msgid "Sidebar"
 msgstr ""
 
@@ -180,7 +184,7 @@ msgstr ""
 msgid "Theme personalizado para  la web de Daniel Lúcia"
 msgstr ""
 
-#: footer.php:5
+#: footer.php:14
 #, php-format
 msgid "Theme: %1$s by %2$s."
 msgstr ""
@@ -201,6 +205,6 @@ msgstr ""
 msgid "You are the first one to download it"
 msgstr ""
 
-#: page-home.php:24
+#: page-home.php:18
 msgid "Últimos Posts"
 msgstr ""
