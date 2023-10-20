@@ -18,22 +18,26 @@
 				<?php the_custom_logo(); ?>
 			</div>
 
-			<nav id="site-navigation" class="main-navigation">
-				<?php
-				wp_nav_menu(
-					[
-						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
-					]
-				);
-				?>
-			</nav>
+			<?php get_search_form(); ?>
 
-			<?php
-				if ( function_exists( 'daniel_lucia_woocommerce_header_cart' ) ) {
-					daniel_lucia_woocommerce_header_cart();
-				}
-			?>
+			<div class="menu-container">
+				<nav id="site-navigation" class="main-navigation">
+					<?php
+					wp_nav_menu(
+						[
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary-menu',
+						]
+					);
+					?>
+				</nav>
+
+				<?php
+					if ( function_exists( 'daniel_lucia_woocommerce_header_cart' ) ) {
+						daniel_lucia_woocommerce_header_cart();
+					}
+				?>
+			</div>
 
 		</header>
 	</div>
