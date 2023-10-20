@@ -6,8 +6,10 @@
 		<?php dynamic_sidebar('home'); ?>
 	</div>
 
-	<div class="after-home-widgets">
-		<?php dynamic_sidebar('after-home'); ?>
+	<div class="after-home-widgets-container">
+		<div class="after-home-widgets">
+			<?php dynamic_sidebar('after-home'); ?>
+		</div>
 	</div>
 	
 	<div class="container-columns">
