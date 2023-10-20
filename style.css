@@ -77,7 +77,7 @@ body {
     -webkit-font-feature-settings: 'ss01';
     font-feature-settings: 'ss01';
     line-height: 1.6;
-    background-color: var(--background-dark);
+    background: var(--background-dark);
 }
 
 select, button, input, textarea {
@@ -163,7 +163,7 @@ section.related>h2:after,
     content: "";
     height: 4px;
     width: 56px;
-    background-color: var(--text-color-emphasis);
+    background: var(--text-color-emphasis);
     display: inline-block;
     margin: 0 0 0 10px;
 }
@@ -175,7 +175,7 @@ section.related>h2:after,
     /*border-bottom: 1px solid var(--border-color);*/
     position: sticky;
     top: 0;
-    background-color: #fff;
+    background: #fff;
     z-index: 10;
     box-shadow: var(--box-shadow);
 }
@@ -246,7 +246,7 @@ section.related>h2:after,
     line-height: 1.2;
     padding: calc(var(--space-basic) / 4) 40px calc(var(--space-basic) / 4) calc(var(--space-basic) / 3);
     border-radius: var(--border-radius-min);
-    background-color: var(--background-dark);
+    background: var(--background-dark);
     position: relative;
 }
 
@@ -315,7 +315,7 @@ section.related>h2:after,
     bottom: 0;
     left: 50%;
     margin-left: -20%;
-    background-color: var(--text-color-emphasis);
+    background: var(--text-color-emphasis);
     opacity: 0;
     transition: all 0.2s ease;
 }
@@ -377,7 +377,7 @@ section.related>h2:after,
 .widget-area .widget {
     padding: var(--space-basic);
     border-radius: var(--border-radius);
-    background-color: var(--background-light);
+    background: var(--background-light);
     /* border: 1px solid var(--border-color); */
     box-shadow: var(--box-shadow);
 }
@@ -405,7 +405,7 @@ pre {
     max-width: 100%;
     padding: calc(var(--space-basic) / 2);
     border-radius: var(--border-radius-min);
-    background-color: var(--background-dark);
+    background: var(--background-dark);
     border: 1px solid var(--border-color);
     /*font-size: 0.8em;*/
     margin: calc(var(--space-basic) / 2) 0;
@@ -416,11 +416,11 @@ article.post, .search-results article, article.page {
     margin: var(--space-basic) 0 0 0;
     /*padding: var(--space-basic);
     border-radius: var(--border-radius);
-    background-color: var(--background-light);*/
+    background: var(--background-light);*/
     /*border: 1px solid var(--border-color);*/
     border-radius: var(--border-radius);
     padding: var(--space-basic);
-    background-color: var(--background-light);
+    background: var(--background-light);
     box-shadow: var(--box-shadow);
 }
 
@@ -431,7 +431,7 @@ article.post, .search-results article, article.page {
     left: 0;
     width: 100%;
     max-width: 600px;
-    background-color: var(--background-dark);
+    background: var(--background-dark);
     bottom: calc(var(--space-basic) * -2);
 }*/
 
@@ -569,7 +569,7 @@ select {
     border: none;
     border-radius: var(--border-radius-min);
     cursor: pointer;
-    background-color: var(--background-light);
+    background: var(--background-light);
 }
 
 .search-form {
@@ -588,7 +588,7 @@ select {
 .search-form .search-submit, form.cart .button {
     border: none;
     cursor: pointer;
-    background-color: #000;
+    background: #000;
     color: #fff;
     width: 100px;
     font-weight: 600;
@@ -636,7 +636,7 @@ select {
     content: "";
     height: 4px;
     width: 56px;
-    background-color: var(--text-color-emphasis);
+    background: var(--text-color-emphasis);
     display: inline-block;
     margin: 0 0 0 10px;
 }
@@ -665,7 +665,7 @@ select {
 .button, .form-submit .submit, .mailpoet_submit, .comment-reply-link {
     border: none;
     cursor: pointer;
-    background-color: #000;
+    background: #000;
     color: #fff;
     font-weight: 600;
     border-radius: calc(var(--border-radius)/2);
@@ -679,7 +679,7 @@ select {
 }
 
 .button.ajax_add_to_cart, .button.button-link, .button.alt, .comment-reply-link {
-    background-color: transparent;
+    background: transparent;
     padding: 0;
     color: var(--text-color);
     text-decoration: underline;
@@ -743,7 +743,7 @@ select {
 .comment-list .comment {
     padding: var(--space-basic);
     border-radius: var(--border-radius);
-    background-color: var(--background-light);
+    background: var(--background-light);
 }
 
 .comment-list .comment .reply {
@@ -792,7 +792,7 @@ select {
  */
 
 .site-footer {
-    background-color: #000;
+    background: #000;
     color: #fff;
     padding: var(--space-basic) 0;
     margin: calc(var(--space-basic) * 2) 0 0 0;

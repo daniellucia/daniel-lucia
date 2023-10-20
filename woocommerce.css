@@ -11,7 +11,7 @@ div.product {
 	margin: 0 0 var(--space-basic) 0;
 	padding: var(--space-basic);
 	border-radius: var(--border-radius);
-	background-color: var(--background-light);
+	background: var(--background-light);
 	/*border: 1px solid var(--border-color);*/
 	box-shadow: var(--box-shadow);
 }
@@ -54,7 +54,7 @@ div.product .summary .price {
 	left: 0;
 	width: 100px;
 	height: 2px;
-	background-color: var(--text-color-emphasis);
+	background: var(--text-color-emphasis);
 }
 
 section.related {
@@ -82,7 +82,7 @@ form.cart .button {
 }
 
 form.cart .input-text {
-	background-color: var(--background-light);
+	background: var(--background-light);
 	border: 1px solid var(--border-color);
 	border-right: none;
 	transition: all 0.2s ease;
@@ -138,7 +138,7 @@ form.cart .added_to_cart {
 	/*border: 1px solid var(--border-color);*/
 	border-radius: var(--border-radius-min);
 	padding: calc(var(--space-basic)/3) calc(var(--space-basic)/2);
-	background-color: var(--background-light);
+	background: var(--background-light);
 	box-shadow: var(--box-shadow);
 }
 
@@ -226,13 +226,13 @@ body .button-back a {
 }
 
 .shop_table th {
-	background-color: var(--background-dark);
+	background: var(--background-dark);
 	/*border-radius: var(--border-radius-min);*/
 	padding: 5px 10px;
 }
 
 .shop_table tfoot th, .calculated_shipping .shop_table th {
-	background-color: transparent;
+	background: transparent;
 }
 
 .shop_table th:first-child {
@@ -279,7 +279,7 @@ body .button-back a {
 	padding: calc(var(--space-basic) / 3) calc(var(--space-basic) / 2);
 	margin: 0 0 0 calc(var(--space-basic) / 2);
 	border-radius: var(--border-radius-min);
-	background-color: var(--background-light);
+	background: var(--background-light);
 	box-shadow: var(--box-shadow);
 	align-items: center;
 	gap: 10px;
@@ -315,7 +315,7 @@ ul.products li.product a {
 	border-radius: var(--border-radius-min);
 	padding: var(--space-basic);
 	height: 100%;
-	background-color: var(--background-light);
+	background: var(--background-light);
 	box-shadow: 8px 14px 30px rgba(0, 0, 0, 0.05);
 }
 
@@ -446,7 +446,7 @@ ul.products li.product-category .count {
 .woocommerce-message {
 	margin: 0 0 calc(var(--space-basic) / 2) 0;
 	padding: 10px 30px;
-	background-color: var(--background-light);
+	background: var(--background-light);
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: space-between;
@@ -455,7 +455,7 @@ ul.products li.product-category .count {
 }
 
 .woocommerce-message .button {
-	background-color: transparent;
+	background: transparent;
 	padding: 0;
 	color: var(--text-color-emphasis);
 	text-decoration: underline;
@@ -468,7 +468,7 @@ ul.products li.product-category .count {
 	margin: 0 0 var(--space-basic) 0;
 	padding: var(--space-basic);
 	border-radius: var(--border-radius);
-	background-color: var(--background-light);
+	background: var(--background-light);
 	/*border: 1px solid var(--border-color);*/
 	box-shadow: var(--box-shadow);
 }
@@ -539,7 +539,7 @@ ul.products li.product-category .count {
 }
 
 .woocommerce-MyAccount-content .addresses .edit {
-	background-color: var(--text-color-emphasis);
+	background: var(--text-color-emphasis);
 	color: #fff;
 	display: block;
 	font-size: 0.9em;
@@ -554,7 +554,7 @@ ul.products li.product-category .count {
 
 .woocommerce-MyAccount-content .woocommerce-message {
 	justify-content: flex-end;
-	background-color: var(--background-dark);
+	background: var(--background-dark);
 	font-weight: bold;
 	border-radius: var(--border-radius-min);
 }
