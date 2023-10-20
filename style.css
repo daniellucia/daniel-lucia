@@ -199,6 +199,11 @@ section.related>h2:after,
     }
 }
 
+.site-header .site-branding {
+    min-width: 88px;
+    transition: all 0.2s ease;
+}
+
 .menu-container {
     display: flex;
     flex-direction: column;
@@ -220,6 +225,10 @@ section.related>h2:after,
 
 .site-header-container.is-pinned .site-header .custom-logo {
     width: 70px;
+}
+
+.site-header-container.is-pinned .site-branding {
+    min-width: 70px;
 }
 
 .site-header .site-header-cart {
