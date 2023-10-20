@@ -236,3 +236,19 @@ if (class_exists('WooCommerce')) {
 //Widgets
 require get_template_directory() . '/inc/widgets/hero-widget.php';
 require get_template_directory() . '/inc/widgets/latest-products.php';
+
+
+/**
+ * Función para mostrar sidebar
+ */
+function is_show_sidebar()
+{
+	if (!is_active_sidebar('sidebar-1')) {
+		return false;
+	}
+
+	if (is_checkout() || is_cart() || is_account_page()) {
+		return false;
+	}
+
+}

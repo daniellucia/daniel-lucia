@@ -1,10 +1,7 @@
 <?php
 
 
-if (!is_active_sidebar('sidebar-1')) {
-	return;
-}
-if (is_checkout() || is_cart()) {
+if (!is_show_sidebar()) {
 	return;
 }
 
