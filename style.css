@@ -210,6 +210,11 @@ section.related>h2:after,
 .site-header .custom-logo {
     width: 88px;
     height: auto;
+    transition: all 0.2s ease;
+}
+
+.site-header-container.is-pinned .site-header .custom-logo {
+    width: 70px;
 }
 
 .site-header .site-header-cart {
