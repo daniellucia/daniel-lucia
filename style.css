@@ -411,7 +411,7 @@ pre {
     margin: calc(var(--space-basic) / 2) 0;
 }
 
-article.post, .search-results article, article.page {
+article.post, .search-results .site-main article, article.page {
     position: relative;
     margin: var(--space-basic) 0 0 0;
     /*padding: var(--space-basic);
@@ -458,11 +458,11 @@ article.post, .search-results article, article.page {
     display: none;
 }*/
 
-.home-latest-post article.post:first-child, .search-results article:first-child {
+.home-latest-post article.post:first-child, .search-results .site-main article:first-child {
     margin-top: 0;
 }
 
-article.post .entry-title, .woocommerce .product_title, .entry-header h1.entry-title, .woocommerce-products-header .page-title, .search-results article .entry-title {
+article.post .entry-title, .woocommerce .product_title, .entry-header h1.entry-title, .woocommerce-products-header .page-title, .search-results .site-main article .entry-title {
     font-size: 27px;
     max-width: 750px;
     margin: 0 0 10px 0;
@@ -470,27 +470,27 @@ article.post .entry-title, .woocommerce .product_title, .entry-header h1.entry-t
 }
 
 @media (min-width: 768px) {
-    article.post .entry-title, .woocommerce .product_title, .entry-header h1.entry-title, .woocommerce-products-header .page-title, .search-results article .entry-title {
+    article.post .entry-title, .woocommerce .product_title, .entry-header h1.entry-title, .woocommerce-products-header .page-title, .search-results .site-main article .entry-title {
         font-size: 35px;
         margin: 0 0 20px 0;
     }
 }
 
-article.post .entry-title a, .woocommerce .product_title a, .search-results article .entry-title a {
+article.post .entry-title a, .woocommerce .product_title a, .search-results .site-main article .entry-title a {
     /*color: #0d0c22;*/
 }
 
-article.post .entry-footer, .search-results article .entry-footer {
+article.post .entry-footer, .search-results .site-main article .entry-footer {
     margin: calc(var(--space-basic) / 2) 0 0 0;
 }
 
-article.post .entry-footer .entry-meta, .search-results article .entry-footer .entry-meta {
+article.post .entry-footer .entry-meta, .search-results .site-main article .entry-footer .entry-meta {
     display: flex;
     gap: calc(var(--space-basic)/2);
     flex-direction: row;
 }
 
-article.post .entry-footer .posted-on, .search-results article .entry-footer .posted-on {
+article.post .entry-footer .posted-on, .search-results .site-main article .entry-footer .posted-on {
     display: flex;
     gap: 5px;
     flex-direction: row;
@@ -501,11 +501,11 @@ article.post .entry-footer time.published {
     font-weight: bold;
 }
 
-article.post .entry-footer time.updated, .search-results article .entry-footer time.updated {
+article.post .entry-footer time.updated, .search-results .site-main article .entry-footer time.updated {
     margin-left: 8px;
 }
 
-article.post .entry-footer time.updated:before, .search-results article .entry-footer time.updated:before {
+article.post .entry-footer time.updated:before, .search-results .site-main article .entry-footer time.updated:before {
     font-weight: bold;
     content: attr(data-text);
     margin-right: 4px;

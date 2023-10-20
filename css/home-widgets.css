@@ -134,3 +134,9 @@
         padding-right: var(--space-basic);
     }
 }
+
+
+body .after-home-widgets .mailpoet_submit {
+    background-color: var(--text-color-emphasis)!important;
+    border-color: var(--text-color-emphasis)!important;
+}
