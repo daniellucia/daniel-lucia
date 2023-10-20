@@ -81,7 +81,7 @@ body {
 
 select, button, input, textarea {
     font-family: var(--font-family-main);
-    font-size: 14px;
+    font-size: var(--body-font-size);
     font-weight: 400;
 }
 
@@ -129,7 +129,8 @@ ul, ol {
 .woocommerce-Reviews-title,
 .woocommerce-checkout .checkout.woocommerce-checkout h3,
 .woocommerce-cart-content .cart-collaterals h2,
-.woocommerce-order-received .woocommerce-order h2 {
+.woocommerce-order-received .woocommerce-order h2,
+.woocommerce-MyAccount-content h2 {
     font-size: 21px;
     margin: 0 0 10px 0;
     line-height: 1.2;
@@ -142,7 +143,8 @@ ul, ol {
     .woocommerce-Reviews-title,
     .woocommerce-checkout .checkout.woocommerce-checkout h3,
     .woocommerce-cart-content .cart-collaterals h2,
-    .woocommerce-order-received .woocommerce-order h2 {
+    .woocommerce-order-received .woocommerce-order h2,
+    .woocommerce-MyAccount-content h2 {
         font-size: 25px;
         margin: 0 0 20px 0;
     }
@@ -155,7 +157,8 @@ section.related>h2:after,
 .woocommerce-checkout .checkout.woocommerce-checkout h3:after,
 .woocommerce-cart-content .cart-collaterals h2:after,
 .woocommerce-order-received .woocommerce-order h2:after,
-.woocommerce-products-header .page-title:after {
+.woocommerce-products-header .page-title:after,
+.woocommerce-MyAccount-content h2:after {
     content: "";
     height: 4px;
     width: 56px;
@@ -378,7 +381,7 @@ section.related>h2:after,
     box-shadow: var(--box-shadow);
 }
 
-.widget-area .widget ul {
+.widget-area .widget ul, .woocommerce-MyAccount-navigation ul {
     display: flex;
     flex-direction: column;
     gap: calc(var(--space-basic) / 4);
@@ -691,7 +694,7 @@ select {
 
 .input-text, .comment-form p input[type=text], .comment-form p input[type=email], .comment-form p input[type=url], .comment-form p textarea {
     width: 100%;
-    padding: 5px;
+    padding: 5px 10px;
     border: 1px solid #c8cace;
     border-radius: var(--border-radius-min);
 }
@@ -700,6 +703,7 @@ select {
     display: flex;
     flex-direction: column;
     gap: 4px;
+    margin: 0 0 10px 0;
 }
 
 .form-row label, .comment-form p label {
