@@ -231,17 +231,24 @@ form.cart .added_to_cart {
 
 .woocommerce-products-header>div {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	font-size: 12px;
-	border: 1px solid var(--border-color);
+	/* border: 1px solid var(--border-color); */
 	padding: calc(var(--space-basic) / 3) calc(var(--space-basic) / 2);
 	margin: 0 0 0 calc(var(--space-basic) / 2);
 	border-radius: var(--border-radius-min);
 	background-color: var(--background-light);
+	box-shadow: var(--box-shadow);
+	align-items: center;
+	gap: 10px;
 }
 
 .post-type-archive .woocommerce-products-header>div {
 	display: none;
+}
+
+.woocommerce-products-header>div p {
+	margin: 0;
 }
 
 .woocommerce-products-header>div select {
