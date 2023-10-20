@@ -26,9 +26,9 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     --background-light: #ffffff;
     --background-dark: #f8f7f4;
     --border-color: #e5e3df;
-    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    --box-shadow: 8px 14px 30px rgba(0, 0, 0, 0.05);
     --max-width: 1550px;
-    --body-font-size: 14px;
+    --body-font-size: 13px;
 }
 
 * {
@@ -121,8 +121,9 @@ ul, ol {
 .woocommerce-checkout .checkout.woocommerce-checkout h3,
 .woocommerce-cart-content .cart-collaterals h2,
 .woocommerce-order-received .woocommerce-order h2 {
-    font-size: 25px;
+    font-size: 21px;
     margin: 0 0 10px 0;
+    line-height: 1.2;
 }
 
 @media (min-width: 768px) {
@@ -133,7 +134,7 @@ ul, ol {
     .woocommerce-checkout .checkout.woocommerce-checkout h3,
     .woocommerce-cart-content .cart-collaterals h2,
     .woocommerce-order-received .woocommerce-order h2 {
-        font-size: 35px;
+        font-size: 25px;
         margin: 0 0 20px 0;
     }
 }
@@ -158,12 +159,12 @@ section.related>h2:after,
  * header
  */
 .site-header-container {
-    border-bottom: 1px solid var(--border-color);
+    /*border-bottom: 1px solid var(--border-color);*/
     position: sticky;
     top: 0;
     background-color: #fff;
     z-index: 10;
-    box-shadow: 0 0 60px rgba(0, 0, 0, .1);
+    box-shadow: var(--box-shadow);
 }
 
 .site-header-container.is-pinned .site-header {
@@ -319,7 +320,8 @@ section.related>h2:after,
     padding: var(--space-basic);
     border-radius: var(--border-radius);
     background-color: var(--background-light);
-    border: 1px solid var(--border-color);
+    /* border: 1px solid var(--border-color); */
+    box-shadow: var(--box-shadow);
 }
 
 .widget-area .widget ul {
@@ -357,10 +359,11 @@ article.post, .search-results article, article.page {
     /*padding: var(--space-basic);
     border-radius: var(--border-radius);
     background-color: var(--background-light);*/
-    border: 1px solid var(--border-color);
+    /*border: 1px solid var(--border-color);*/
     border-radius: var(--border-radius);
     padding: var(--space-basic);
     background-color: var(--background-light);
+    box-shadow: var(--box-shadow);
 }
 
 /*article.post:after {
@@ -402,7 +405,7 @@ article.post, .search-results article, article.page {
 }
 
 article.post .entry-title, .woocommerce .product_title, .entry-header h1.entry-title, .woocommerce-products-header .page-title, .search-results article .entry-title {
-    font-size: 30px;
+    font-size: 27px;
     max-width: 750px;
     margin: 0 0 10px 0;
     line-height: 1.2;
@@ -410,7 +413,7 @@ article.post .entry-title, .woocommerce .product_title, .entry-header h1.entry-t
 
 @media (min-width: 768px) {
     article.post .entry-title, .woocommerce .product_title, .entry-header h1.entry-title, .woocommerce-products-header .page-title, .search-results article .entry-title {
-        font-size: 45px;
+        font-size: 35px;
         margin: 0 0 20px 0;
     }
 }
