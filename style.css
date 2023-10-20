@@ -182,7 +182,7 @@ section.related>h2:after,
 
 @media (min-width: 768px) {
     .site-header-container.is-pinned .site-header {
-        padding: calc(var(--space-basic)/4) var(--space-basic);
+        padding: calc(var(--space-basic)/4) 0;
     }
 }
 
@@ -198,12 +198,11 @@ section.related>h2:after,
 
 @media (min-width: 768px) {
     .site-header {
-        padding: var(--space-basic);
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         gap: var(--space-basic);
-        padding: calc(var(--space-basic)/2) var(--space-basic);
+        padding: var(--space-basic) 0;
     }
 }
 
@@ -959,4 +958,15 @@ select {
     .footer-widgets {
         flex-direction: row;
     }
+}
+
+/**
+ * Comentarios
+ */
+
+.comments-area {
+    border-radius: var(--border-radius);
+    padding: var(--space-basic);
+    background: var(--background-light);
+    box-shadow: var(--box-shadow);
 }

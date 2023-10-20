@@ -115,30 +115,32 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 var(--space-basic);
+    gap: var(--space-basic);
 }
 
 @media (min-width: 768px) {
     .after-home-widgets {
-        flex-direction: row;
+        /*flex-direction: row;*/
         padding: 0;
     }
 }
 
 .after-home-widgets .widget {
     width: 100%;
+    max-width: 650px;
+    text-align: center;
 }
 
 .after-home-widgets .widget.widget_block.widget_text {
-    max-width: 400px;
     font-size: 23px;
 }
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     .after-home-widgets .widget.widget_block.widget_text {
         text-align: right;
         padding-right: var(--space-basic);
     }
-}
+}*/
 
 
 body .after-home-widgets .mailpoet_submit {

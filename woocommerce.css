@@ -481,16 +481,24 @@ ul.products li.product-category .count {
  * Mi cuenta
  */
 
-.woocommerce-account .entry-content .woocommerce {
+.woocommerce-account .entry-content .woocommerce, .woocommerce-account #customer_login {
 	display: flex;
 	gap: var(--space-basic);
 	flex-direction: column;
 }
 
 @media (min-width: 768px) {
-	.woocommerce-account .entry-content .woocommerce {
+	.woocommerce-account .entry-content .woocommerce, .woocommerce-account #customer_login {
 		flex-direction: row;
 	}
+}
+
+.woocommerce-account #customer_login {
+	width: 100%;
+}
+
+.woocommerce-account #customer_login > div {
+	width: 100%;
 }
 
 .woocommerce-MyAccount-content {
