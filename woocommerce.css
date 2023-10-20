@@ -294,6 +294,10 @@ ul.products li.product-category a {
 	align-items: center;
 }
 
+ul.products li.product-category .woocommerce-loop-category__title {
+	text-align: center;
+}
+
 ul.products li.product-category .count {
 	display: none;
 }
