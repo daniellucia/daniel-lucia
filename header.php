@@ -37,6 +37,12 @@
 						daniel_lucia_woocommerce_header_cart();
 					}
 				?>
+
+				<div class="my-account-link">
+					<a href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/iconos/user.svg" alt="<?php echo __('My account', 'daniel-lucia'); ?>" height="32" width="32"/>
+					</a>
+				</div>
 			</div>
 
 		</header>

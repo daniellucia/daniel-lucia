@@ -267,6 +267,22 @@ section.related>h2:after,
     text-wrap: nowrap;
 }
 
+.site-header .my-account-link {
+    margin-left: 30px;
+}
+
+.site-header .my-account-link a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-header .my-account-link img {
+    min-width: 32px;
+    min-height: 32px;
+}
+
 .main-navigation nav {
     flex-grow: 1;
 }
