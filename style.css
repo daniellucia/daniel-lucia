@@ -253,10 +253,25 @@ section.related>h2:after,
     display: inline-block;
     padding: 2px calc(var(--space-basic)/2);
     border-radius: var(--border-radius-min);
+    position: relative;
 }
 
-.main-navigation .menu .current-menu-item a {
-    background-color: var(--background-dark);
+.main-navigation .menu a:after {
+    content: "";
+    width: 40%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -20%;
+    background-color: var(--text-color-emphasis);
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.main-navigation .menu .current-menu-item a:after, .main-navigation .menu a:hover:after {
+    opacity: 1;
+    translate: 0 5px;
 }
 
 .container-columns {
