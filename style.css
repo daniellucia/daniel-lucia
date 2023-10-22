@@ -1002,3 +1002,16 @@ body .wpcf7 form .wpcf7-response-output {
     background: var(--background-light);
     box-shadow: var(--box-shadow);
 }
+
+/**
+ * Sin resultados
+ */
+
+.no-results.not-found .page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: calc(var(--space-basic) / 2);
+    font-size: 1.3em;
+    max-width: 500px;
+}
