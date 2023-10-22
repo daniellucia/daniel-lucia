@@ -452,6 +452,10 @@ section.related>h2:after,
     max-width: 100%;
 }
 
+.container-columns>.site-main.without-sidebar {
+    max-width: 100%;
+}
+
 .home .widget-area {
     margin: calc(var(--space-basic) * 2) 0 0 0;
 }
