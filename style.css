@@ -825,6 +825,10 @@ select {
     opacity: .85;
 }
 
+.wpcf7-submit {
+    width: 100%;
+}
+
 .button.ajax_add_to_cart, .button.button-link, .button.alt, .comment-reply-link {
     background: transparent;
     padding: 0;
