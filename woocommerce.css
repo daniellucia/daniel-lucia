@@ -317,6 +317,11 @@ ul.products li.product a {
 	height: 100%;
 	background: var(--background-light);
 	box-shadow: 8px 14px 30px rgba(0, 0, 0, 0.05);
+	transition: all 0.2s ease;
+}
+
+ul.products li.product a:hover {
+	box-shadow: 8px 14px 30px rgba(0, 0, 0, 0.1);
 }
 
 ul.products li.product .woocommerce-loop-product__title {
