@@ -456,6 +456,11 @@ section.related>h2:after,
     max-width: 100%;
 }
 
+.container-columns>.site-main.slim {
+    max-width: 960px;
+    margin: auto;
+}
+
 .home .widget-area {
     margin: calc(var(--space-basic) * 2) 0 0 0;
 }
