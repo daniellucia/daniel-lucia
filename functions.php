@@ -241,9 +241,9 @@ require get_template_directory() . '/inc/widgets/latest-products.php';
 /**
  * Función para mostrar sidebar
  */
-function is_show_sidebar()
+function is_show_sidebar(string $id = '')
 {
-	if (!is_active_sidebar('sidebar-1')) {
+	if ($id != '' && !is_active_sidebar($id)) {
 		return false;
 	}
 
@@ -251,4 +251,5 @@ function is_show_sidebar()
 		return false;
 	}
 
+	return true;
 }

@@ -1,7 +1,7 @@
 <?php
 
 
-if (!is_show_sidebar()) {
+if (!is_show_sidebar('sidebar-1')) {
 	return;
 }
 
