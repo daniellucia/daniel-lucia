@@ -804,7 +804,7 @@ select {
 /**
  * formularios
  */
-.button, .form-submit .submit, .mailpoet_submit, .comment-reply-link {
+.button, .form-submit .submit, .mailpoet_submit, .comment-reply-link, .wpcf7-submit {
     border: none;
     cursor: pointer;
     background: #000;
@@ -816,7 +816,7 @@ select {
     text-align: center;
 }
 
-.button:hover, .form-submit .submit:hover, .comment-reply-link:hover {
+.button:hover, .form-submit .submit:hover, .comment-reply-link:hover, .wpcf7-submit:hover {
     opacity: .85;
 }
 
