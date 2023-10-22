@@ -467,6 +467,7 @@ section.related>h2:after,
 
 .site-header .search-form {
     width: 100%;
+    max-width: 470px;
 }
 
 .site-header .search-form .search-field {
