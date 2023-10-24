@@ -28,6 +28,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     --border-color: #e5e3df;
     --box-shadow: 8px 14px 30px rgba(0, 0, 0, 0.05);
     --max-width: 1550px;
+    --max-width-slim: 1280px;
     --body-font-size: 15px;
 }
 
@@ -451,7 +452,7 @@ section.related>h2:after,
 }
 
 .container-columns>.site-main {
-    max-width: 960px;
+    max-width: var(--max-width-slim);
 }
 
 .woocommerce-page .container-columns>.site-main {
@@ -463,7 +464,7 @@ section.related>h2:after,
 }
 
 .container-columns>.site-main.slim {
-    max-width: 960px;
+    max-width: var(--max-width-slim);
     margin: auto;
 }
 
@@ -479,6 +480,34 @@ section.related>h2:after,
     padding: var(--space-basic);
     background: var(--background-light);
     box-shadow: var(--box-shadow);
+}
+
+.page-container-slim {
+    display: flex;
+    gap: var(--space-basic);
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .page-container-slim {
+        flex-direction: row;
+    }
+
+    .page-container-slim .post-thumbnail img {
+        box-shadow: var(--box-shadow);
+    }
+
+    .page-container-slim .entry-content {
+        flex-grow: 1;
+    }
+}
+
+.page-container-slim .post-thumbnail img {
+    border-radius: var(--border-radius);
+}
+
+.page-container-slim .entry-footer {
+    display: none;
 }
 
 .home .widget-area {
