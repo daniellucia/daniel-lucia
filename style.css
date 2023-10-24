@@ -461,6 +461,20 @@ section.related>h2:after,
     margin: auto;
 }
 
+.site-main.slim article.page {
+    border-radius: 0;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.site-main.slim article.page .page-container-slim {
+    border-radius: var(--border-radius);
+    padding: var(--space-basic);
+    background: var(--background-light);
+    box-shadow: var(--box-shadow);
+}
+
 .home .widget-area {
     margin: calc(var(--space-basic) * 2) 0 0 0;
 }
