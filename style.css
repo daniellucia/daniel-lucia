@@ -153,7 +153,7 @@ ul, ol {
     .woocommerce-order-received .woocommerce-order h2,
     .woocommerce-MyAccount-content h2 {
         font-size: 25px;
-        margin: 0 0 20px 0;
+        margin: 0 0 var(--space-basic) 0;
     }
 }
 
@@ -585,6 +585,10 @@ article.post, .search-results .site-main article, article.page {
     box-shadow: var(--box-shadow);
 }
 
+article.post:first-of-type {
+    margin-top: 0;
+}
+
 /*article.post:after {
     content: "";
     position: absolute;
@@ -635,7 +639,7 @@ article.post .entry-title, .woocommerce .product_title, .entry-header h1.entry-t
 @media (min-width: 768px) {
     article.post .entry-title, .woocommerce .product_title, .entry-header h1.entry-title, .woocommerce-products-header .page-title, .search-results .site-main article .entry-title {
         font-size: 35px;
-        margin: 0 0 20px 0;
+        margin: 0 0 var(--space-basic) 0;
     }
 }
 

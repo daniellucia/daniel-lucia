@@ -313,7 +313,7 @@ ul.products li.product a {
 	line-height: 1.2;
 	/* border: 1px solid var(--border-color); */
 	border-radius: var(--border-radius-min);
-	padding: var(--space-basic);
+	padding: calc(var(--space-basic)/2);
 	height: 100%;
 	background: var(--background-light);
 	box-shadow: 8px 14px 30px rgba(0, 0, 0, 0.05);
