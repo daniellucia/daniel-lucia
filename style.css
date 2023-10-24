@@ -31,6 +31,12 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     --body-font-size: 15px;
 }
 
+@media (min-width: 768px) {
+    :root {
+        --space-basic: 60px;
+    }
+}
+
 * {
     box-sizing: border-box;
 }
