@@ -76,7 +76,7 @@ body {
     margin: 0;
     -webkit-font-feature-settings: 'ss01';
     font-feature-settings: 'ss01';
-    line-height: 1.6;
+    line-height: 1.8;
     background: var(--background-dark);
 }
 
