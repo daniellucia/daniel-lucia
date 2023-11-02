@@ -1050,6 +1050,39 @@ body .wpcf7 form .wpcf7-response-output {
     }
 }
 
+.site-footer .menu {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--space-basic) / 4);
+}
+
+.site-footer .menu li {
+    position: relative;
+}
+
+
+.site-footer .menu li:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    left: 0;
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.2);
+    bottom: calc(var(--space-basic) / -8);
+}
+
+.site-footer .menu li:last-child:after {
+    display: none;
+}
+
+.site-footer .final-words {
+    text-align: center;
+    margin: 25px 0 0 0;
+    padding: 25px 0 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 /**
  * Comentarios
  */

@@ -11,7 +11,9 @@
 					</div>
 				<?php endfor; ?>
 			</div>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'daniel-lucia' ), 'daniel-lucia', '<a href="http://www.daniellucia.es">Daniel Lucia</a>' ); ?>
+
+			<p class="final-words"><?php echo __( '❤️ Hecho con muchas ganas por Daniel Lúcia.', 'daniel-lucia' ); ?></p>
+
 		</div>
 	</footer>
 <?php endif; ?>
