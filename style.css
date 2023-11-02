@@ -123,12 +123,15 @@ ul, ol {
 }
 
 .site {
-    padding: calc(var(--space-basic)/2);
+    padding: calc(var(--space-basic)/2) 0;
+    width: 95%;
+    margin: 0 auto;
 }
 
 @media (min-width: 768px) {
     .site {
-        padding: var(--space-basic);
+        padding: var(--space-basic) 0;
+        width: 95%;
     }
 }
 
@@ -195,12 +198,13 @@ section.related>h2:after,
 
 .site-header {
     display: flex;
-    /*flex-direction: column;*/
+    /* flex-direction: column; */
     padding: calc(var(--space-basic)/3) calc(var(--space-basic)/2);
     margin: 0 auto;
     max-width: var(--max-width);
     transition: all 0.2s ease;
     gap: calc(var(--space-basic)/2);
+    width: 95%;
 }
 
 @media (min-width: 768px) {
@@ -1025,6 +1029,7 @@ body .wpcf7 form .wpcf7-response-output {
 .site-footer .site-info {
     max-width: var(--max-width);
     margin: 0 auto 0 auto;
+    width: 95%;
 }
 
 .site-footer a {
