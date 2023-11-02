@@ -34,16 +34,24 @@
 				</nav>
 
 				<?php
+
+				if ((bool)get_theme_mod('active_shop')) {
 					if ( function_exists( 'daniel_lucia_woocommerce_header_cart' ) ) {
 						daniel_lucia_woocommerce_header_cart();
 					}
+				}
+
 				?>
 
+				<?php if ((bool)get_theme_mod('active_shop')): ?>
+				
 				<div class="my-account-link">
 					<a href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/iconos/user.svg" alt="<?php echo __('My account', 'daniel-lucia'); ?>" height="32" width="32"/>
 					</a>
 				</div>
+
+				<?php endif; ?>
 
 			</div>
 

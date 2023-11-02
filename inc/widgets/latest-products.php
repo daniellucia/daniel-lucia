@@ -15,6 +15,10 @@ class Latest_WooCommerce_Products_Widget extends WP_Widget
     public function widget($args_widgets, $instance)
     {
 
+        if (!(bool)get_theme_mod('active_shop')) {
+            return;
+        }
+        
         $title = !empty($instance['title']) ? $instance['title'] : 'Últimos Productos';
         $limit = !empty($instance['limit']) ? absint($instance['limit']) : 3;
 
